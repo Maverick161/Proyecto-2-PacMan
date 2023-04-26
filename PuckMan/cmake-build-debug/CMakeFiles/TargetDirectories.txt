@@ -1,0 +1,3 @@
+/home/fernandez/CLionProjects/PuckMan/cmake-build-debug/CMakeFiles/PuckMan.dir
+/home/fernandez/CLionProjects/PuckMan/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/fernandez/CLionProjects/PuckMan/cmake-build-debug/CMakeFiles/rebuild_cache.dir
