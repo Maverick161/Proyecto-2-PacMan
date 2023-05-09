@@ -8,20 +8,18 @@
 
 array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP_HEIGHT>& i_map_sketch, array<Position, 4>& i_ghost_positions, Pacman& i_pacman)
 {
-	//Is it okay if I put {} here? I feel like I'm doing something illegal.
-	//But if I don't put it there, Visual Studio keeps saying "lOcAl vArIaBlE Is nOt iNiTiAlIzEd".
 	array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> output_map{};
 
 	for (unsigned char a = 0; a < MAP_HEIGHT; a++)
 	{
 		for (unsigned char b = 0; b < MAP_WIDTH; b++)
 		{
-			//By default, every cell is empty.
+			//Cada celda esta vacia por default
 			output_map[b][a] = Cell::Empty;
 
 			switch (i_map_sketch[a][b])
 			{
-				//#wall #obstacle #youcantgothroughme
+				//paredes como obstaculo
 				case '#':
 				{
 					output_map[b][a] = Cell::Wall;
@@ -40,7 +38,7 @@ array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP
 
 					break;
 				}
-				//Red ghost
+				//enemigo rojo
 				case '0':
 				{
 					i_ghost_positions[0].x = CELL_SIZE * b;
@@ -48,7 +46,7 @@ array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP
 
 					break;
 				}
-				//Pink ghost
+				//Enemigo Rosado
 				case '1':
 				{
 					i_ghost_positions[1].x = CELL_SIZE * b;
@@ -56,7 +54,7 @@ array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP
 
 					break;
 				}
-				//Blue (cyan) ghost
+				//Enemigo azul
 				case '2':
 				{
 					i_ghost_positions[2].x = CELL_SIZE * b;
@@ -64,7 +62,7 @@ array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP
 
 					break;
 				}
-				//Orange ghost
+				//Enemigo Naranja
 				case '3':
 				{
 					i_ghost_positions[3].x = CELL_SIZE * b;
@@ -72,14 +70,14 @@ array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP
 
 					break;
 				}
-				//Pacman!
+				//Personaje PacMan
 				case 'P':
 				{
 					i_pacman.set_position(CELL_SIZE * b, CELL_SIZE * a);
 
 					break;
 				}
-				//This looks like a surprised face.
+				//Poder
 				case 'o':
 				{
 					output_map[b][a] = Cell::Energizer;

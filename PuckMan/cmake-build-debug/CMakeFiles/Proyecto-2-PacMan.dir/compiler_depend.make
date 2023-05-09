@@ -292,6 +292,9 @@ CMakeFiles/Proyecto-2-PacMan.dir/ConvertSketch.cpp.o: /home/fernandez/CLionProje
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Global.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.hpp \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.hpp
 
 CMakeFiles/Proyecto-2-PacMan.dir/DrawMap.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.cpp \
@@ -1217,6 +1220,9 @@ CMakeFiles/Proyecto-2-PacMan.dir/Ghost.cpp.o: /home/fernandez/CLionProjects/Proy
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Global.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.hpp \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.hpp
 
@@ -1536,6 +1542,9 @@ CMakeFiles/Proyecto-2-PacMan.dir/GhostManager.cpp.o: /home/fernandez/CLionProjec
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Global.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.hpp \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.hpp
 
@@ -1836,6 +1845,9 @@ CMakeFiles/Proyecto-2-PacMan.dir/Main.cpp.o: /home/fernandez/CLionProjects/Proye
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Global.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.hpp \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.hpp \
@@ -2260,6 +2272,9 @@ CMakeFiles/Proyecto-2-PacMan.dir/Pacman.cpp.o: /home/fernandez/CLionProjects/Pro
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Global.hpp \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.hpp \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc \
   /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.hpp
 
 
@@ -2268,8 +2283,6 @@ CMakeFiles/Proyecto-2-PacMan.dir/Pacman.cpp.o: /home/fernandez/CLionProjects/Pro
 /usr/include/c++/12/ratio:
 
 /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.hpp:
-
-/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.cpp:
 
 /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.hpp:
 
@@ -2292,6 +2305,12 @@ CMakeFiles/Proyecto-2-PacMan.dir/Pacman.cpp.o: /home/fernandez/CLionProjects/Pro
 /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.cpp:
 
 /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.hpp:
+
+/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.cpp:
+
+/usr/include/c++/12/bits/istream.tcc:
+
+/usr/include/c++/12/istream:
 
 /usr/include/SFML/Graphics/VertexBuffer.hpp:
 
@@ -2792,6 +2811,8 @@ CMakeFiles/Proyecto-2-PacMan.dir/Pacman.cpp.o: /home/fernandez/CLionProjects/Pro
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/c++/12/iostream:
 
 /usr/include/SFML/Graphics/Vertex.hpp:
 

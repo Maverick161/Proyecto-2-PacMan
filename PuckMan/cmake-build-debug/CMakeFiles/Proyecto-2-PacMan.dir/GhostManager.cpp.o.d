@@ -255,5 +255,7 @@ CMakeFiles/Proyecto-2-PacMan.dir/GhostManager.cpp.o: \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Global.hpp \
  /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.hpp \
+ /usr/include/c++/12/iostream /usr/include/c++/12/istream \
+ /usr/include/c++/12/bits/istream.tcc \
  /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.hpp \
  /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.hpp
