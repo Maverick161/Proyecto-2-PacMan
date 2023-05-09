@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/PuckMan.dir/all
+all: CMakeFiles/Proyecto-2-PacMan.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/PuckMan.dir/clean
+clean: CMakeFiles/Proyecto-2-PacMan.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/PuckMan.dir
+# Target rules for target CMakeFiles/Proyecto-2-PacMan.dir
 
 # All Build rule for target.
-CMakeFiles/PuckMan.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target PuckMan"
-.PHONY : CMakeFiles/PuckMan.dir/all
+CMakeFiles/Proyecto-2-PacMan.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target Proyecto-2-PacMan"
+.PHONY : CMakeFiles/Proyecto-2-PacMan.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/PuckMan.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PuckMan.dir/all
+CMakeFiles/Proyecto-2-PacMan.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Proyecto-2-PacMan.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/PuckMan.dir/rule
+.PHONY : CMakeFiles/Proyecto-2-PacMan.dir/rule
 
 # Convenience name for target.
-PuckMan: CMakeFiles/PuckMan.dir/rule
-.PHONY : PuckMan
+Proyecto-2-PacMan: CMakeFiles/Proyecto-2-PacMan.dir/rule
+.PHONY : Proyecto-2-PacMan
 
 # clean rule for target.
-CMakeFiles/PuckMan.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/clean
-.PHONY : CMakeFiles/PuckMan.dir/clean
+CMakeFiles/Proyecto-2-PacMan.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/clean
+.PHONY : CMakeFiles/Proyecto-2-PacMan.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

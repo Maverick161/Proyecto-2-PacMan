@@ -8,12 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Dificil.cpp" "CMakeFiles/PuckMan.dir/Dificil.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/Dificil.cpp.o.d"
-  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Experto.cpp" "CMakeFiles/PuckMan.dir/Experto.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/Experto.cpp.o.d"
-  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Facil.cpp" "CMakeFiles/PuckMan.dir/Facil.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/Facil.cpp.o.d"
-  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Medio.cpp" "CMakeFiles/PuckMan.dir/Medio.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/Medio.cpp.o.d"
-  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Menu.cpp" "CMakeFiles/PuckMan.dir/Menu.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/Menu.cpp.o.d"
-  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/main.cpp" "CMakeFiles/PuckMan.dir/main.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/main.cpp.o.d"
+  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.cpp" "CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o.d"
+  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.cpp" "CMakeFiles/PuckMan.dir/DrawMap.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/DrawMap.cpp.o.d"
+  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.cpp" "CMakeFiles/PuckMan.dir/DrawText.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/DrawText.cpp.o.d"
+  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.cpp" "CMakeFiles/PuckMan.dir/Ghost.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/Ghost.cpp.o.d"
+  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.cpp" "CMakeFiles/PuckMan.dir/GhostManager.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/GhostManager.cpp.o.d"
+  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Main.cpp" "CMakeFiles/PuckMan.dir/Main.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/Main.cpp.o.d"
+  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.cpp" "CMakeFiles/PuckMan.dir/MapCollision.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/MapCollision.cpp.o.d"
+  "/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.cpp" "CMakeFiles/PuckMan.dir/Pacman.cpp.o" "gcc" "CMakeFiles/PuckMan.dir/Pacman.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -82,37 +82,52 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Dificil.cpp">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.cpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Dificil.h">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.hpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Experto.cpp">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.cpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Experto.h">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.hpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Facil.cpp">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.cpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Facil.h">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.hpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Medio.cpp">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.cpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Medio.h">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.hpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Menu.cpp">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.cpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Menu.h">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.hpp">
 			<Option target="PuckMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/main.cpp">
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Global.hpp">
+			<Option target="PuckMan"/>
+		</Unit>
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Main.cpp">
+			<Option target="PuckMan"/>
+		</Unit>
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.cpp">
+			<Option target="PuckMan"/>
+		</Unit>
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.hpp">
+			<Option target="PuckMan"/>
+		</Unit>
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.cpp">
+			<Option target="PuckMan"/>
+		</Unit>
+		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.hpp">
 			<Option target="PuckMan"/>
 		</Unit>
 		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/CMakeLists.txt">

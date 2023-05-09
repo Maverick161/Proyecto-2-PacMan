@@ -117,161 +117,209 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PuckMan
+# Target rules for targets named Proyecto-2-PacMan
 
 # Build rule for target.
-PuckMan: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PuckMan
-.PHONY : PuckMan
+Proyecto-2-PacMan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Proyecto-2-PacMan
+.PHONY : Proyecto-2-PacMan
 
 # fast build rule for target.
-PuckMan/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/build
-.PHONY : PuckMan/fast
+Proyecto-2-PacMan/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/build
+.PHONY : Proyecto-2-PacMan/fast
 
-Dificil.o: Dificil.cpp.o
-.PHONY : Dificil.o
-
-# target to build an object file
-Dificil.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Dificil.cpp.o
-.PHONY : Dificil.cpp.o
-
-Dificil.i: Dificil.cpp.i
-.PHONY : Dificil.i
-
-# target to preprocess a source file
-Dificil.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Dificil.cpp.i
-.PHONY : Dificil.cpp.i
-
-Dificil.s: Dificil.cpp.s
-.PHONY : Dificil.s
-
-# target to generate assembly for a file
-Dificil.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Dificil.cpp.s
-.PHONY : Dificil.cpp.s
-
-Experto.o: Experto.cpp.o
-.PHONY : Experto.o
+ConvertSketch.o: ConvertSketch.cpp.o
+.PHONY : ConvertSketch.o
 
 # target to build an object file
-Experto.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Experto.cpp.o
-.PHONY : Experto.cpp.o
+ConvertSketch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/ConvertSketch.cpp.o
+.PHONY : ConvertSketch.cpp.o
 
-Experto.i: Experto.cpp.i
-.PHONY : Experto.i
+ConvertSketch.i: ConvertSketch.cpp.i
+.PHONY : ConvertSketch.i
 
 # target to preprocess a source file
-Experto.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Experto.cpp.i
-.PHONY : Experto.cpp.i
+ConvertSketch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/ConvertSketch.cpp.i
+.PHONY : ConvertSketch.cpp.i
 
-Experto.s: Experto.cpp.s
-.PHONY : Experto.s
+ConvertSketch.s: ConvertSketch.cpp.s
+.PHONY : ConvertSketch.s
 
 # target to generate assembly for a file
-Experto.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Experto.cpp.s
-.PHONY : Experto.cpp.s
+ConvertSketch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/ConvertSketch.cpp.s
+.PHONY : ConvertSketch.cpp.s
 
-Facil.o: Facil.cpp.o
-.PHONY : Facil.o
+DrawMap.o: DrawMap.cpp.o
+.PHONY : DrawMap.o
 
 # target to build an object file
-Facil.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Facil.cpp.o
-.PHONY : Facil.cpp.o
+DrawMap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/DrawMap.cpp.o
+.PHONY : DrawMap.cpp.o
 
-Facil.i: Facil.cpp.i
-.PHONY : Facil.i
+DrawMap.i: DrawMap.cpp.i
+.PHONY : DrawMap.i
 
 # target to preprocess a source file
-Facil.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Facil.cpp.i
-.PHONY : Facil.cpp.i
+DrawMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/DrawMap.cpp.i
+.PHONY : DrawMap.cpp.i
 
-Facil.s: Facil.cpp.s
-.PHONY : Facil.s
+DrawMap.s: DrawMap.cpp.s
+.PHONY : DrawMap.s
 
 # target to generate assembly for a file
-Facil.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Facil.cpp.s
-.PHONY : Facil.cpp.s
+DrawMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/DrawMap.cpp.s
+.PHONY : DrawMap.cpp.s
 
-Medio.o: Medio.cpp.o
-.PHONY : Medio.o
+DrawText.o: DrawText.cpp.o
+.PHONY : DrawText.o
 
 # target to build an object file
-Medio.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Medio.cpp.o
-.PHONY : Medio.cpp.o
+DrawText.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/DrawText.cpp.o
+.PHONY : DrawText.cpp.o
 
-Medio.i: Medio.cpp.i
-.PHONY : Medio.i
+DrawText.i: DrawText.cpp.i
+.PHONY : DrawText.i
 
 # target to preprocess a source file
-Medio.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Medio.cpp.i
-.PHONY : Medio.cpp.i
+DrawText.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/DrawText.cpp.i
+.PHONY : DrawText.cpp.i
 
-Medio.s: Medio.cpp.s
-.PHONY : Medio.s
+DrawText.s: DrawText.cpp.s
+.PHONY : DrawText.s
 
 # target to generate assembly for a file
-Medio.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Medio.cpp.s
-.PHONY : Medio.cpp.s
+DrawText.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/DrawText.cpp.s
+.PHONY : DrawText.cpp.s
 
-Menu.o: Menu.cpp.o
-.PHONY : Menu.o
+Ghost.o: Ghost.cpp.o
+.PHONY : Ghost.o
 
 # target to build an object file
-Menu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Menu.cpp.o
-.PHONY : Menu.cpp.o
+Ghost.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/Ghost.cpp.o
+.PHONY : Ghost.cpp.o
 
-Menu.i: Menu.cpp.i
-.PHONY : Menu.i
+Ghost.i: Ghost.cpp.i
+.PHONY : Ghost.i
 
 # target to preprocess a source file
-Menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Menu.cpp.i
-.PHONY : Menu.cpp.i
+Ghost.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/Ghost.cpp.i
+.PHONY : Ghost.cpp.i
 
-Menu.s: Menu.cpp.s
-.PHONY : Menu.s
+Ghost.s: Ghost.cpp.s
+.PHONY : Ghost.s
 
 # target to generate assembly for a file
-Menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/Menu.cpp.s
-.PHONY : Menu.cpp.s
+Ghost.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/Ghost.cpp.s
+.PHONY : Ghost.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+GhostManager.o: GhostManager.cpp.o
+.PHONY : GhostManager.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/main.cpp.o
-.PHONY : main.cpp.o
+GhostManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/GhostManager.cpp.o
+.PHONY : GhostManager.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+GhostManager.i: GhostManager.cpp.i
+.PHONY : GhostManager.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/main.cpp.i
-.PHONY : main.cpp.i
+GhostManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/GhostManager.cpp.i
+.PHONY : GhostManager.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+GhostManager.s: GhostManager.cpp.s
+.PHONY : GhostManager.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PuckMan.dir/build.make CMakeFiles/PuckMan.dir/main.cpp.s
-.PHONY : main.cpp.s
+GhostManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/GhostManager.cpp.s
+.PHONY : GhostManager.cpp.s
+
+Main.o: Main.cpp.o
+.PHONY : Main.o
+
+# target to build an object file
+Main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/Main.cpp.o
+.PHONY : Main.cpp.o
+
+Main.i: Main.cpp.i
+.PHONY : Main.i
+
+# target to preprocess a source file
+Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/Main.cpp.i
+.PHONY : Main.cpp.i
+
+Main.s: Main.cpp.s
+.PHONY : Main.s
+
+# target to generate assembly for a file
+Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/Main.cpp.s
+.PHONY : Main.cpp.s
+
+MapCollision.o: MapCollision.cpp.o
+.PHONY : MapCollision.o
+
+# target to build an object file
+MapCollision.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/MapCollision.cpp.o
+.PHONY : MapCollision.cpp.o
+
+MapCollision.i: MapCollision.cpp.i
+.PHONY : MapCollision.i
+
+# target to preprocess a source file
+MapCollision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/MapCollision.cpp.i
+.PHONY : MapCollision.cpp.i
+
+MapCollision.s: MapCollision.cpp.s
+.PHONY : MapCollision.s
+
+# target to generate assembly for a file
+MapCollision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/MapCollision.cpp.s
+.PHONY : MapCollision.cpp.s
+
+Pacman.o: Pacman.cpp.o
+.PHONY : Pacman.o
+
+# target to build an object file
+Pacman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/Pacman.cpp.o
+.PHONY : Pacman.cpp.o
+
+Pacman.i: Pacman.cpp.i
+.PHONY : Pacman.i
+
+# target to preprocess a source file
+Pacman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/Pacman.cpp.i
+.PHONY : Pacman.cpp.i
+
+Pacman.s: Pacman.cpp.s
+.PHONY : Pacman.s
+
+# target to generate assembly for a file
+Pacman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto-2-PacMan.dir/build.make CMakeFiles/Proyecto-2-PacMan.dir/Pacman.cpp.s
+.PHONY : Pacman.cpp.s
 
 # Help Target
 help:
@@ -281,25 +329,31 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... PuckMan"
-	@echo "... Dificil.o"
-	@echo "... Dificil.i"
-	@echo "... Dificil.s"
-	@echo "... Experto.o"
-	@echo "... Experto.i"
-	@echo "... Experto.s"
-	@echo "... Facil.o"
-	@echo "... Facil.i"
-	@echo "... Facil.s"
-	@echo "... Medio.o"
-	@echo "... Medio.i"
-	@echo "... Medio.s"
-	@echo "... Menu.o"
-	@echo "... Menu.i"
-	@echo "... Menu.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Proyecto-2-PacMan"
+	@echo "... ConvertSketch.o"
+	@echo "... ConvertSketch.i"
+	@echo "... ConvertSketch.s"
+	@echo "... DrawMap.o"
+	@echo "... DrawMap.i"
+	@echo "... DrawMap.s"
+	@echo "... DrawText.o"
+	@echo "... DrawText.i"
+	@echo "... DrawText.s"
+	@echo "... Ghost.o"
+	@echo "... Ghost.i"
+	@echo "... Ghost.s"
+	@echo "... GhostManager.o"
+	@echo "... GhostManager.i"
+	@echo "... GhostManager.s"
+	@echo "... Main.o"
+	@echo "... Main.i"
+	@echo "... Main.s"
+	@echo "... MapCollision.o"
+	@echo "... MapCollision.i"
+	@echo "... MapCollision.s"
+	@echo "... Pacman.o"
+	@echo "... Pacman.i"
+	@echo "... Pacman.s"
 .PHONY : help
 
 

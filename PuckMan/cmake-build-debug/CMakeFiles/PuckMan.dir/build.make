@@ -69,114 +69,146 @@ include CMakeFiles/PuckMan.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PuckMan.dir/flags.make
 
-CMakeFiles/PuckMan.dir/main.cpp.o: CMakeFiles/PuckMan.dir/flags.make
-CMakeFiles/PuckMan.dir/main.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/main.cpp
-CMakeFiles/PuckMan.dir/main.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PuckMan.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/main.cpp.o -MF CMakeFiles/PuckMan.dir/main.cpp.o.d -o CMakeFiles/PuckMan.dir/main.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/main.cpp
+CMakeFiles/PuckMan.dir/Main.cpp.o: CMakeFiles/PuckMan.dir/flags.make
+CMakeFiles/PuckMan.dir/Main.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Main.cpp
+CMakeFiles/PuckMan.dir/Main.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PuckMan.dir/Main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/Main.cpp.o -MF CMakeFiles/PuckMan.dir/Main.cpp.o.d -o CMakeFiles/PuckMan.dir/Main.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Main.cpp
 
-CMakeFiles/PuckMan.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/main.cpp > CMakeFiles/PuckMan.dir/main.cpp.i
+CMakeFiles/PuckMan.dir/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/Main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Main.cpp > CMakeFiles/PuckMan.dir/Main.cpp.i
 
-CMakeFiles/PuckMan.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/main.cpp -o CMakeFiles/PuckMan.dir/main.cpp.s
+CMakeFiles/PuckMan.dir/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/Main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Main.cpp -o CMakeFiles/PuckMan.dir/Main.cpp.s
 
-CMakeFiles/PuckMan.dir/Menu.cpp.o: CMakeFiles/PuckMan.dir/flags.make
-CMakeFiles/PuckMan.dir/Menu.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Menu.cpp
-CMakeFiles/PuckMan.dir/Menu.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PuckMan.dir/Menu.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/Menu.cpp.o -MF CMakeFiles/PuckMan.dir/Menu.cpp.o.d -o CMakeFiles/PuckMan.dir/Menu.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Menu.cpp
+CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o: CMakeFiles/PuckMan.dir/flags.make
+CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.cpp
+CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o -MF CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o.d -o CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.cpp
 
-CMakeFiles/PuckMan.dir/Menu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/Menu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Menu.cpp > CMakeFiles/PuckMan.dir/Menu.cpp.i
+CMakeFiles/PuckMan.dir/ConvertSketch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/ConvertSketch.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.cpp > CMakeFiles/PuckMan.dir/ConvertSketch.cpp.i
 
-CMakeFiles/PuckMan.dir/Menu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/Menu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Menu.cpp -o CMakeFiles/PuckMan.dir/Menu.cpp.s
+CMakeFiles/PuckMan.dir/ConvertSketch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/ConvertSketch.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.cpp -o CMakeFiles/PuckMan.dir/ConvertSketch.cpp.s
 
-CMakeFiles/PuckMan.dir/Facil.cpp.o: CMakeFiles/PuckMan.dir/flags.make
-CMakeFiles/PuckMan.dir/Facil.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Facil.cpp
-CMakeFiles/PuckMan.dir/Facil.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PuckMan.dir/Facil.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/Facil.cpp.o -MF CMakeFiles/PuckMan.dir/Facil.cpp.o.d -o CMakeFiles/PuckMan.dir/Facil.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Facil.cpp
+CMakeFiles/PuckMan.dir/DrawMap.cpp.o: CMakeFiles/PuckMan.dir/flags.make
+CMakeFiles/PuckMan.dir/DrawMap.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.cpp
+CMakeFiles/PuckMan.dir/DrawMap.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PuckMan.dir/DrawMap.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/DrawMap.cpp.o -MF CMakeFiles/PuckMan.dir/DrawMap.cpp.o.d -o CMakeFiles/PuckMan.dir/DrawMap.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.cpp
 
-CMakeFiles/PuckMan.dir/Facil.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/Facil.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Facil.cpp > CMakeFiles/PuckMan.dir/Facil.cpp.i
+CMakeFiles/PuckMan.dir/DrawMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/DrawMap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.cpp > CMakeFiles/PuckMan.dir/DrawMap.cpp.i
 
-CMakeFiles/PuckMan.dir/Facil.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/Facil.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Facil.cpp -o CMakeFiles/PuckMan.dir/Facil.cpp.s
+CMakeFiles/PuckMan.dir/DrawMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/DrawMap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.cpp -o CMakeFiles/PuckMan.dir/DrawMap.cpp.s
 
-CMakeFiles/PuckMan.dir/Medio.cpp.o: CMakeFiles/PuckMan.dir/flags.make
-CMakeFiles/PuckMan.dir/Medio.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Medio.cpp
-CMakeFiles/PuckMan.dir/Medio.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PuckMan.dir/Medio.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/Medio.cpp.o -MF CMakeFiles/PuckMan.dir/Medio.cpp.o.d -o CMakeFiles/PuckMan.dir/Medio.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Medio.cpp
+CMakeFiles/PuckMan.dir/DrawText.cpp.o: CMakeFiles/PuckMan.dir/flags.make
+CMakeFiles/PuckMan.dir/DrawText.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.cpp
+CMakeFiles/PuckMan.dir/DrawText.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PuckMan.dir/DrawText.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/DrawText.cpp.o -MF CMakeFiles/PuckMan.dir/DrawText.cpp.o.d -o CMakeFiles/PuckMan.dir/DrawText.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.cpp
 
-CMakeFiles/PuckMan.dir/Medio.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/Medio.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Medio.cpp > CMakeFiles/PuckMan.dir/Medio.cpp.i
+CMakeFiles/PuckMan.dir/DrawText.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/DrawText.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.cpp > CMakeFiles/PuckMan.dir/DrawText.cpp.i
 
-CMakeFiles/PuckMan.dir/Medio.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/Medio.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Medio.cpp -o CMakeFiles/PuckMan.dir/Medio.cpp.s
+CMakeFiles/PuckMan.dir/DrawText.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/DrawText.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.cpp -o CMakeFiles/PuckMan.dir/DrawText.cpp.s
 
-CMakeFiles/PuckMan.dir/Dificil.cpp.o: CMakeFiles/PuckMan.dir/flags.make
-CMakeFiles/PuckMan.dir/Dificil.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Dificil.cpp
-CMakeFiles/PuckMan.dir/Dificil.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PuckMan.dir/Dificil.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/Dificil.cpp.o -MF CMakeFiles/PuckMan.dir/Dificil.cpp.o.d -o CMakeFiles/PuckMan.dir/Dificil.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Dificil.cpp
+CMakeFiles/PuckMan.dir/Ghost.cpp.o: CMakeFiles/PuckMan.dir/flags.make
+CMakeFiles/PuckMan.dir/Ghost.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.cpp
+CMakeFiles/PuckMan.dir/Ghost.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PuckMan.dir/Ghost.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/Ghost.cpp.o -MF CMakeFiles/PuckMan.dir/Ghost.cpp.o.d -o CMakeFiles/PuckMan.dir/Ghost.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.cpp
 
-CMakeFiles/PuckMan.dir/Dificil.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/Dificil.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Dificil.cpp > CMakeFiles/PuckMan.dir/Dificil.cpp.i
+CMakeFiles/PuckMan.dir/Ghost.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/Ghost.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.cpp > CMakeFiles/PuckMan.dir/Ghost.cpp.i
 
-CMakeFiles/PuckMan.dir/Dificil.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/Dificil.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Dificil.cpp -o CMakeFiles/PuckMan.dir/Dificil.cpp.s
+CMakeFiles/PuckMan.dir/Ghost.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/Ghost.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.cpp -o CMakeFiles/PuckMan.dir/Ghost.cpp.s
 
-CMakeFiles/PuckMan.dir/Experto.cpp.o: CMakeFiles/PuckMan.dir/flags.make
-CMakeFiles/PuckMan.dir/Experto.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Experto.cpp
-CMakeFiles/PuckMan.dir/Experto.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PuckMan.dir/Experto.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/Experto.cpp.o -MF CMakeFiles/PuckMan.dir/Experto.cpp.o.d -o CMakeFiles/PuckMan.dir/Experto.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Experto.cpp
+CMakeFiles/PuckMan.dir/GhostManager.cpp.o: CMakeFiles/PuckMan.dir/flags.make
+CMakeFiles/PuckMan.dir/GhostManager.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.cpp
+CMakeFiles/PuckMan.dir/GhostManager.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PuckMan.dir/GhostManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/GhostManager.cpp.o -MF CMakeFiles/PuckMan.dir/GhostManager.cpp.o.d -o CMakeFiles/PuckMan.dir/GhostManager.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.cpp
 
-CMakeFiles/PuckMan.dir/Experto.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/Experto.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Experto.cpp > CMakeFiles/PuckMan.dir/Experto.cpp.i
+CMakeFiles/PuckMan.dir/GhostManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/GhostManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.cpp > CMakeFiles/PuckMan.dir/GhostManager.cpp.i
 
-CMakeFiles/PuckMan.dir/Experto.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/Experto.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Experto.cpp -o CMakeFiles/PuckMan.dir/Experto.cpp.s
+CMakeFiles/PuckMan.dir/GhostManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/GhostManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.cpp -o CMakeFiles/PuckMan.dir/GhostManager.cpp.s
+
+CMakeFiles/PuckMan.dir/MapCollision.cpp.o: CMakeFiles/PuckMan.dir/flags.make
+CMakeFiles/PuckMan.dir/MapCollision.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.cpp
+CMakeFiles/PuckMan.dir/MapCollision.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PuckMan.dir/MapCollision.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/MapCollision.cpp.o -MF CMakeFiles/PuckMan.dir/MapCollision.cpp.o.d -o CMakeFiles/PuckMan.dir/MapCollision.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.cpp
+
+CMakeFiles/PuckMan.dir/MapCollision.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/MapCollision.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.cpp > CMakeFiles/PuckMan.dir/MapCollision.cpp.i
+
+CMakeFiles/PuckMan.dir/MapCollision.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/MapCollision.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.cpp -o CMakeFiles/PuckMan.dir/MapCollision.cpp.s
+
+CMakeFiles/PuckMan.dir/Pacman.cpp.o: CMakeFiles/PuckMan.dir/flags.make
+CMakeFiles/PuckMan.dir/Pacman.cpp.o: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.cpp
+CMakeFiles/PuckMan.dir/Pacman.cpp.o: CMakeFiles/PuckMan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PuckMan.dir/Pacman.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PuckMan.dir/Pacman.cpp.o -MF CMakeFiles/PuckMan.dir/Pacman.cpp.o.d -o CMakeFiles/PuckMan.dir/Pacman.cpp.o -c /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.cpp
+
+CMakeFiles/PuckMan.dir/Pacman.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PuckMan.dir/Pacman.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.cpp > CMakeFiles/PuckMan.dir/Pacman.cpp.i
+
+CMakeFiles/PuckMan.dir/Pacman.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PuckMan.dir/Pacman.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.cpp -o CMakeFiles/PuckMan.dir/Pacman.cpp.s
 
 # Object files for target PuckMan
 PuckMan_OBJECTS = \
-"CMakeFiles/PuckMan.dir/main.cpp.o" \
-"CMakeFiles/PuckMan.dir/Menu.cpp.o" \
-"CMakeFiles/PuckMan.dir/Facil.cpp.o" \
-"CMakeFiles/PuckMan.dir/Medio.cpp.o" \
-"CMakeFiles/PuckMan.dir/Dificil.cpp.o" \
-"CMakeFiles/PuckMan.dir/Experto.cpp.o"
+"CMakeFiles/PuckMan.dir/Main.cpp.o" \
+"CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o" \
+"CMakeFiles/PuckMan.dir/DrawMap.cpp.o" \
+"CMakeFiles/PuckMan.dir/DrawText.cpp.o" \
+"CMakeFiles/PuckMan.dir/Ghost.cpp.o" \
+"CMakeFiles/PuckMan.dir/GhostManager.cpp.o" \
+"CMakeFiles/PuckMan.dir/MapCollision.cpp.o" \
+"CMakeFiles/PuckMan.dir/Pacman.cpp.o"
 
 # External object files for target PuckMan
 PuckMan_EXTERNAL_OBJECTS =
 
-PuckMan: CMakeFiles/PuckMan.dir/main.cpp.o
-PuckMan: CMakeFiles/PuckMan.dir/Menu.cpp.o
-PuckMan: CMakeFiles/PuckMan.dir/Facil.cpp.o
-PuckMan: CMakeFiles/PuckMan.dir/Medio.cpp.o
-PuckMan: CMakeFiles/PuckMan.dir/Dificil.cpp.o
-PuckMan: CMakeFiles/PuckMan.dir/Experto.cpp.o
+PuckMan: CMakeFiles/PuckMan.dir/Main.cpp.o
+PuckMan: CMakeFiles/PuckMan.dir/ConvertSketch.cpp.o
+PuckMan: CMakeFiles/PuckMan.dir/DrawMap.cpp.o
+PuckMan: CMakeFiles/PuckMan.dir/DrawText.cpp.o
+PuckMan: CMakeFiles/PuckMan.dir/Ghost.cpp.o
+PuckMan: CMakeFiles/PuckMan.dir/GhostManager.cpp.o
+PuckMan: CMakeFiles/PuckMan.dir/MapCollision.cpp.o
+PuckMan: CMakeFiles/PuckMan.dir/Pacman.cpp.o
 PuckMan: CMakeFiles/PuckMan.dir/build.make
 PuckMan: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 PuckMan: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 PuckMan: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 PuckMan: CMakeFiles/PuckMan.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable PuckMan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable PuckMan"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PuckMan.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

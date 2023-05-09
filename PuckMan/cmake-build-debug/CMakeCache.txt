@@ -159,7 +159,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=PuckMan
+CMAKE_PROJECT_NAME:STATIC=Proyecto-2-PacMan
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -223,11 +223,29 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+CoolPuckMan_BINARY_DIR:STATIC=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug
+
+//Value Computed by CMake
+CoolPuckMan_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+CoolPuckMan_SOURCE_DIR:STATIC=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan
+
 //Path to a program.
 ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+Proyecto-2-PacMan_BINARY_DIR:STATIC=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug
+
+//Value Computed by CMake
+Proyecto-2-PacMan_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Proyecto-2-PacMan_SOURCE_DIR:STATIC=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan
 
 //Value Computed by CMake
 PuckMan_BINARY_DIR:STATIC=/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug
