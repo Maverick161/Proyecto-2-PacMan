@@ -25,6 +25,8 @@ int main()
 
 	unsigned char level = 0;
 
+    //extern int puntaje;
+
 	//Similar to lag, used to make the game framerate-independent.
 	chrono::time_point<chrono::steady_clock> previous_time;
 
@@ -164,14 +166,18 @@ int main()
 			{
 				window.clear();
 
+
 				if (0 == game_won && 0 == pacman.get_dead())
 				{
 					draw_map(map, window);
 
 					ghost_manager.draw(GHOST_FLASH_START >= pacman.get_energizer_timer(), window);
 
-					draw_text(0, 0, CELL_SIZE * MAP_HEIGHT, "Level: " + to_string(1 + level), window);
-				}
+					draw_text(false, 0, CELL_SIZE * MAP_HEIGHT, "Nivel: " + to_string(1 + level), window);
+
+                    //draw_text(false, 80, CELL_SIZE * MAP_HEIGHT, "Puntos: "+ to_string(puntaje), window);
+
+                }
 
 				pacman.draw(game_won, window);
 
@@ -179,7 +185,7 @@ int main()
 				{
 					if (1 == game_won)
 					{
-						draw_text(1, 0, 0, "Next level!", window);
+						draw_text(1, 0, 0, "Next!", window);
 					}
 					else
 					{

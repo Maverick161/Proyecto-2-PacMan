@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 using namespace sf;
 using namespace std;
@@ -8,6 +9,8 @@ class Pacman
 	//This is used for the death animation.
 	bool animation_over;
 	bool dead;
+
+    int puntaje = 0; // para el puntaje del jugador
 
 	unsigned char direction;
 

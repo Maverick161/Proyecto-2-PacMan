@@ -2,9 +2,8 @@
 
 using namespace std;
 
-//I won't explain this.
 constexpr unsigned char CELL_SIZE = 16;
-//This too.
+
 constexpr unsigned char FONT_HEIGHT = 16;
 //Okay, I'll explain this.
 //I start counting everything from 0, so this is actually the second ghost.

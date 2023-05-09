@@ -12,6 +12,7 @@ Pacman::Pacman() :
 	direction(0),
 	energizer_timer(0),
 	position({0, 0})
+
 {
 	//I just realized that I already explained everything in the Ghost class.
 	//And I don't like to repeat myself.
@@ -193,6 +194,10 @@ void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WI
 	{
 		//He becomes energized!
 		energizer_timer = static_cast<unsigned short>(ENERGIZER_DURATION / pow(2, i_level));
+
+        // puntaje en pantalla
+        puntaje+=10;
+        cout << "El valor de puntaje es: " << puntaje << std::endl;
 	}
 	else
 	{
