@@ -15,22 +15,23 @@
 using namespace sf;
 using namespace std;
 
+//el tamano de la pantalla es de 336x352
+
 int main()
 {
-    //Is the game won?
+    //para saber si se gana el juego
     bool game_won = 0;
 
-    //Used to make the game framerate-independent.
+    //juego independiente de los fps
     unsigned lag = 0;
 
+    // variable para el nivel en pantalla
     unsigned char level = 0;
 
-    unsigned int puntaje;
-
-    //Similar to lag, used to make the game framerate-independent.
+    //juego independiente de la velocidad de los fps
     chrono::time_point<chrono::steady_clock> previous_time;
 
-    //It's not exactly like the map from the original Pac-Man game, but it's close enough.
+    //mapa manejado con vectores
     array<string, MAP_HEIGHT> map_sketch = {
             " ################### ",
             " #........#........# ",
@@ -55,16 +56,18 @@ int main()
             " ################### "
     };
 
+    // crea un mapa del juego de tamaño MAP_WIDTH x MAP_HEIGHT, donde cada celda está inicializada utilizando el constructor por defecto de la clase o enumeración Cell.
     array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> map{};
 
-    //Initial ghost positions.
+    //posicion inicial de los fantasmas
     array<Position, 4> ghost_positions;
 
     //SFML thing. Stores events, I think.
     Event event;
 
-    RenderWindow window(VideoMode(CELL_SIZE * MAP_WIDTH * SCREEN_RESIZE, (FONT_HEIGHT + CELL_SIZE * MAP_HEIGHT) * SCREEN_RESIZE), "Pac-Man", Style::Close);
-    //Resizing the window.
+    RenderWindow window(VideoMode(CELL_SIZE * MAP_WIDTH * SCREEN_RESIZE, (FONT_HEIGHT + CELL_SIZE * MAP_HEIGHT) * SCREEN_RESIZE), "PuckMan", Style::Close);
+
+    //tamano de la pantalla
     window.setView(View(FloatRect(0, 0, CELL_SIZE * MAP_WIDTH, FONT_HEIGHT + CELL_SIZE * MAP_HEIGHT)));
 
     GhostManager ghost_manager;
@@ -140,7 +143,7 @@ int main()
                     pacman.set_animation_timer(0);
                 }
             }
-            else if (1 == Keyboard::isKeyPressed(Keyboard::Enter)) //Restarting the game.
+            else if (1 == Keyboard::isKeyPressed(Keyboard::Enter)) //reinicia el juego con la tecla de enter
             {
                 game_won = 0;
 
@@ -150,7 +153,7 @@ int main()
                 }
                 else
                 {
-                    //After each win we reduce the duration of attack waves and energizers.
+                    //despues de ganar cada nivel, se reduce la duracion de las olas de ataque y poderes
                     level++;
                 }
 
@@ -161,7 +164,6 @@ int main()
                 pacman.reset();
             }
 
-            //I don't think anything needs to be explained here.
             if (FRAME_DURATION > lag)
             {
                 window.clear();
@@ -174,8 +176,9 @@ int main()
 
                     draw_text(0, 0, CELL_SIZE * MAP_HEIGHT, "Level: " + to_string(1 + level), window);
 
-                    draw_text(0, 100, CELL_SIZE * MAP_HEIGHT, "Score: " + to_string(pacman.get_score()), window);
+                    draw_text(0, 110, CELL_SIZE * MAP_HEIGHT, "Score: " + to_string(pacman.get_score()), window);
 
+                    draw_text(0, 220, CELL_SIZE * MAP_HEIGHT, "life: " + to_string(pacman.get_vidas()), window);
                 }
 
                 pacman.draw(game_won, window);
@@ -184,14 +187,15 @@ int main()
                 {
                     if (1 == game_won)
                     {
-                        draw_text(1, 0, 0, "Next level!", window);
+                        draw_text(1, 0, 0, "Siguiente nivel", window);
                     }
                     else
                     {
-                        draw_text(1, 0, 0, "Game over", window);
+                        draw_text(1, 0, 0, "Juego Perdido", window);
                     }
                 }
                 window.display();
+
             }
         }
     }

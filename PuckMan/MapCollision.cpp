@@ -53,7 +53,7 @@ bool map_collision(bool i_collect_pellets, bool i_use_door, short i_x, short i_y
 		{
 			if (0 == i_collect_pellets) //Here we only care about the walls.
 			{
-				if (Cell::Wall == i_map[x][y])
+                if (Cell::Wall == i_map[x][y])
 				{
 					output = 1;
 				}
@@ -73,7 +73,8 @@ bool map_collision(bool i_collect_pellets, bool i_use_door, short i_x, short i_y
 				else if (Cell::Pellet == i_map[x][y])
 				{
 					i_map[x][y] = Cell::Empty;
-				}
+
+                }
 			}
 		}
 	}

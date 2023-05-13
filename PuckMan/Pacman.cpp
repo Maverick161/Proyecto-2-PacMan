@@ -8,6 +8,7 @@
 
 Pacman::Pacman() :
     puntaje(0),
+    vidas(3),
 	animation_over(0),
 	dead(0),
 	direction(0),
@@ -21,6 +22,9 @@ unsigned int Pacman::get_score() {
     return puntaje;
 }
 
+unsigned int Pacman::get_vidas(){
+    return vidas;
+}
 
 bool Pacman::get_animation_over()
 {
@@ -87,6 +91,8 @@ void Pacman::draw(bool i_victory, RenderWindow& i_window)
 
 void Pacman::reset()
 {
+    puntaje = 0;
+    vidas = 3;
 	animation_over = 0;
 	dead = 0;
 
@@ -107,7 +113,7 @@ void Pacman::set_dead(bool i_dead)
 
 	if (1 == dead)
 	{
-		//Making sure that the animation starts from the beginning.
+		//revisa que la animacion empiece desde 0
 		animation_timer = 0;
 	}
 }
@@ -199,10 +205,10 @@ void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WI
 	{
 		energizer_timer = static_cast<unsigned short>(ENERGIZER_DURATION / pow(2, i_level));
 
-
         puntaje += 10;
         cout << "El valor de puntaje es: " << puntaje << std::endl;
 	}
+
 	else
 	{
 		energizer_timer = max(0, energizer_timer - 1);
@@ -212,4 +218,11 @@ void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WI
 Position Pacman::get_position()
 {
 	return position;
+}
+
+void Pacman::loseLife() { //metodo para reducir la vida cuando pacman toca un fantasma
+    vidas--;
+    if(vidas <= 0) {
+        set_dead(1); // muere pacman cuando ya no hay vidas
+    }
 }

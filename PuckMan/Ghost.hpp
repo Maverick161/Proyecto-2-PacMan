@@ -1,6 +1,5 @@
 #pragma once
 
-
 using namespace std;
 
 class Ghost
@@ -11,6 +10,7 @@ class Ghost
 
 	unsigned char direction;
 	unsigned char frightened_mode;
+
 	//Timer para mover a los fantasmas lento
 	unsigned char frightened_speed_timer;
 
@@ -20,10 +20,13 @@ class Ghost
 
 	//cuando se escape se va a home el fantasma
 	Position home;
+
 	//para que salga del home
 	Position home_exit;
+
 	//posicion actual
 	Position position;
+
 	//target actual
 	Position target;
 public:

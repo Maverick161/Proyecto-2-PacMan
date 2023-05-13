@@ -20,6 +20,7 @@ bool Ghost::pacman_collision(const Position& i_pacman_position)
 		if (position.y > i_pacman_position.y - CELL_SIZE && position.y < CELL_SIZE + i_pacman_position.y)
 		{
 			return 1;
+
 		}
 	}
 
@@ -343,9 +344,9 @@ void Ghost::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WID
 
 	if (1 == pacman_collision(i_pacman.get_position()))
 	{
-		if (0 == frightened_mode) //When the gohst is not frightened and collides with Pacman, we kill Pacman.
+		if (0 == frightened_mode) //colision entre pacman y fantasmas
 		{
-			i_pacman.set_dead(1);
+			i_pacman.loseLife();
 		}
 		else //para que el fantasma se devuelva al home
 		{
@@ -503,7 +504,7 @@ void Ghost::update_target(unsigned char i_pacman_direction, const Position& i_gh
 	}
 }
 
-Position Ghost::get_position()
+Position Ghost::get_position() //metodo para obtener la posicion del fantasma
 {
 	return position;
 }
