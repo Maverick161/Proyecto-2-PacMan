@@ -7,6 +7,7 @@
 #include "MapCollision.hpp"
 
 Pacman::Pacman() :
+    puntaje(0),
 	animation_over(0),
 	dead(0),
 	direction(0),
@@ -14,9 +15,12 @@ Pacman::Pacman() :
 	position({0, 0})
 
 {
-	//I just realized that I already explained everything in the Ghost class.
-	//And I don't like to repeat myself.
 }
+
+unsigned int Pacman::get_score() {
+    return puntaje;
+}
+
 
 bool Pacman::get_animation_over()
 {
@@ -60,6 +64,7 @@ void Pacman::draw(bool i_victory, RenderWindow& i_window)
 			sprite.setTextureRect(IntRect(CELL_SIZE * frame, 0, CELL_SIZE, CELL_SIZE));
 
 			i_window.draw(sprite);
+
 		}
 		else
 		{
@@ -190,13 +195,12 @@ void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WI
 		position.x = PACMAN_SPEED - CELL_SIZE;
 	}
 
-	if (1 == map_collision(1, 0, position.x, position.y, i_map)) //When Pacman eats an energizer...
+	if (1 == map_collision(1, 0, position.x, position.y, i_map)) //cuando pacman come un poder
 	{
-		//He becomes energized!
 		energizer_timer = static_cast<unsigned short>(ENERGIZER_DURATION / pow(2, i_level));
 
-        // puntaje en pantalla
-        puntaje+=10;
+
+        puntaje += 10;
         cout << "El valor de puntaje es: " << puntaje << std::endl;
 	}
 	else

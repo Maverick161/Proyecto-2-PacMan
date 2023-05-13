@@ -4,15 +4,17 @@
 using namespace sf;
 using namespace std;
 
+//int puntaje = 0; // para el puntaje del jugador
+
 class Pacman
 {
 	//This is used for the death animation.
 	bool animation_over;
 	bool dead;
 
-    int puntaje = 0; // para el puntaje del jugador
-
 	unsigned char direction;
+
+    unsigned int puntaje;
 
 	//timers
 	unsigned short animation_timer;
@@ -20,6 +22,7 @@ class Pacman
 
 	//Current location of this creature, commonly known as Pacman.
 	Position position;
+
 public:
 	Pacman();
 
@@ -38,4 +41,6 @@ public:
 	void update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map);
 
 	Position get_position();
+
+    unsigned int get_score(); // metodo para obtener el puntaje
 };
