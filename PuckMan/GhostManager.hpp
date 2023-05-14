@@ -14,11 +14,8 @@ class GhostManager
 	array<Ghost, 4> ghosts;
 public:
 	GhostManager();
+
 	void draw(bool i_flash, RenderWindow& i_window);
 	void reset(unsigned char i_level, const array<Position, 4>& i_ghost_positions);
 	void update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, Pacman& i_pacman);
-    void setLevel(unsigned char level);
-
-private:
-    unsigned char current_level;
 };

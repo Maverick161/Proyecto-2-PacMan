@@ -14,35 +14,32 @@ GhostManager::GhostManager() :
 {
 
 }
-void GhostManager::setLevel(unsigned char level)
-{
-    current_level = level;
-}
+
 void GhostManager::draw(bool i_flash, RenderWindow& i_window)
 {
-    // Only draw the ghosts that are active in the current level
-    for (unsigned char a = 0; a < current_level && a < ghosts.size(); a++)
-    {
-        ghosts[a].draw(i_flash, i_window);
-    }
+	for (Ghost& ghost : ghosts)
+	{
+		ghost.draw(i_flash, i_window);
+	}
 }
 
 void GhostManager::reset(unsigned char i_level, const std::array<Position, 4>& i_ghost_positions)
 {
-    //current_level = i_level;
-    current_wave = 0;
-    wave_timer = static_cast<unsigned short>(LONG_SCATTER_DURATION / pow(2, i_level));
+	current_wave = 0;
 
-    // Only reset positions for the ghosts that are active in the current level
-    for (unsigned char a = 0; a < i_level && a < ghosts.size(); a++)
-    {
-        ghosts[a].set_position(i_ghost_positions[a].x, i_ghost_positions[a].y);
-    }
+	//This is how we're increasing the difficulty.
+	wave_timer = static_cast<unsigned short>(LONG_SCATTER_DURATION / pow(2, i_level));
 
-    //for (unsigned char a = 0; a < i_level && a < ghosts.size(); a++)
-    //{
-        //ghosts[a].reset(ghosts[2].get_position(), ghosts[0].get_position());
-    //}
+	for (unsigned char a = 0; a < 4; a++)
+	{
+		ghosts[a].set_position(i_ghost_positions[a].x, i_ghost_positions[a].y);
+	}
+
+	for (Ghost& ghost : ghosts)
+	{
+		//We use the blue ghost to get the location of the house and the red ghost to get the location of the exit.
+		ghost.reset(ghosts[2].get_position(), ghosts[0].get_position());
+	}
 }
 
 void GhostManager::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, Pacman& i_pacman)
@@ -55,15 +52,10 @@ void GhostManager::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, 
 			{
 				current_wave++;
 
-                for(unsigned char a=0;a<=i_level&&a<ghosts.size();a++){
-                    ghosts[a].switch_mode();
-                    //ghosts[a].update(i_level,i_map,ghosts[0],i_pacman);
-                }
-
-				//for (Ghost& ghost : ghosts)
-				//{
-				//	ghost.switch_mode();
-				//}
+				for (Ghost& ghost : ghosts)
+				{
+					ghost.switch_mode();
+				}
 			}
 
 			//I took the rules from the website.
@@ -85,13 +77,9 @@ void GhostManager::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, 
 			wave_timer--;
 		}
 	}
-    for (unsigned char a=0;a<i_level && a<ghosts.size();a++){
-        ghosts[a].update(i_level, i_map, ghosts[0],i_pacman);
-    }
 
 	for (Ghost& ghost : ghosts)
 	{
 		ghost.update(i_level, i_map, ghosts[0], i_pacman);
 	}
-
 }

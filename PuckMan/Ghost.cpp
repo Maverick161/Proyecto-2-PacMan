@@ -29,38 +29,38 @@ bool Ghost::pacman_collision(const Position& i_pacman_position)
 
 float Ghost::get_target_distance(unsigned char i_direction)
 {
-    short x = position.x;
-    short y = position.y;
+	short x = position.x;
+	short y = position.y;
 
-    // Mover el enemigo a cierta distancia que es calculada a cierto punto
-    switch (i_direction)
-    {
-        case 0:
-        {
-            x += GHOST_SPEED;
+	// Mover el enemigo a cierta distancia que es calculada a cierto punto
+	switch (i_direction)
+	{
+		case 0:
+		{
+			x += GHOST_SPEED;
 
-            break;
-        }
-        case 1:
-        {
-            y -= GHOST_SPEED;
+			break;
+		}
+		case 1:
+		{
+			y -= GHOST_SPEED;
 
-            break;
-        }
-        case 2:
-        {
-            x -= GHOST_SPEED;
+			break;
+		}
+		case 2:
+		{
+			x -= GHOST_SPEED;
 
-            break;
-        }
-        case 3:
-        {
-            y += GHOST_SPEED;
-        }
-    }
+			break;
+		}
+		case 3:
+		{
+			y += GHOST_SPEED;
+		}
+	}
 
-    //Movimiento de los fantasmas con Pitagoras
-    return static_cast<float>(sqrt(pow(x - target.x, 2) + pow(y - target.y, 2)));
+	//Movimiento de los fantasmas con Pitagoras
+	return static_cast<float>(sqrt(pow(x - target.x, 2) + pow(y - target.y, 2)));
 }
 
 void Ghost::draw(bool i_flash, RenderWindow& i_window)
