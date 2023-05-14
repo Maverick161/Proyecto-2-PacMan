@@ -8,144 +8,144 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
+				<Option working_dir="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Proyecto-2-PacMan">
-				<Option output="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Proyecto-2-PacMan" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
+				<Option output="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Proyecto-2-PacMan" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto-2-PacMan"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto-2-PacMan"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Proyecto-2-PacMan/fast">
-				<Option output="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Proyecto-2-PacMan" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
+				<Option output="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Proyecto-2-PacMan" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto-2-PacMan/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto-2-PacMan/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
+				<Option working_dir="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
+				<Option working_dir="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.cpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/ConvertSketch.cpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/ConvertSketch.hpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/ConvertSketch.hpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.cpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/DrawMap.cpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawMap.hpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/DrawMap.hpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.cpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/DrawText.cpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/DrawText.hpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/DrawText.hpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.cpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Ghost.cpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Ghost.hpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Ghost.hpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.cpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/GhostManager.cpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/GhostManager.hpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/GhostManager.hpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Global.hpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Global.hpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Main.cpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Main.cpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.cpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/MapCollision.cpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/MapCollision.hpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/MapCollision.hpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.cpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Pacman.cpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Pacman.hpp">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Pacman.hpp">
 			<Option target="Proyecto-2-PacMan"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/CMakeLists.txt">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
+		<Unit filename="/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
 	</Project>

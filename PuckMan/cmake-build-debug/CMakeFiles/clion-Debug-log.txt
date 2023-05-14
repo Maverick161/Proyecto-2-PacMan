@@ -1,5 +1,17 @@
-/home/fernandez/Escritorio/CLion-2022.3.3/clion-2022.3.3/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan -B /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug
+/opt/CLion/CLion-2023.1.2/clion-2023.1.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/fernando/Documentos/Proyecto-2-PacMan/PuckMan -B /home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Found SFML 2.5.1 in /usr/lib/x86_64-linux-gnu/cmake/SFML
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug
+-- Build files have been written to: /home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug

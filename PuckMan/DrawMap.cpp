@@ -9,7 +9,7 @@ void draw_map(const array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, RenderWind
 	sf::Sprite sprite;
 
 	sf::Texture texture;
-	texture.loadFromFile("/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Images/Map16.png");
+	texture.loadFromFile("/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Images/Map16.png");
 
 	sprite.setTexture(texture);
 

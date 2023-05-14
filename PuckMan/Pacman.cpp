@@ -62,7 +62,7 @@ void Pacman::draw(bool i_victory, RenderWindow& i_window)
 		{
 			animation_timer++;
 
-			texture.loadFromFile("/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Images/PacmanDeath16.png");
+			texture.loadFromFile("/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Images/PacmanDeath16.png");
 
 			sprite.setTexture(texture);
 			sprite.setTextureRect(IntRect(CELL_SIZE * frame, 0, CELL_SIZE, CELL_SIZE));
@@ -78,7 +78,7 @@ void Pacman::draw(bool i_victory, RenderWindow& i_window)
 	}
 	else
 	{
-		texture.loadFromFile("/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Images/Pacman16.png");
+		texture.loadFromFile("/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Images/Pacman16.png");
 
 		sprite.setTexture(texture);
 		sprite.setTextureRect(IntRect(CELL_SIZE * frame, CELL_SIZE * direction, CELL_SIZE, CELL_SIZE));

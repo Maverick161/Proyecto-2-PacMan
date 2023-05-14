@@ -1,3 +1,3 @@
-/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles/Proyecto-2-PacMan.dir
-/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles/Proyecto-2-PacMan.dir
+/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/cmake-build-debug/CMakeFiles/rebuild_cache.dir

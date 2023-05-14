@@ -80,6 +80,8 @@ int main()
     map = convert_sketch(map_sketch, ghost_positions, pacman);
 
     ghost_manager.reset(level, ghost_positions);
+    unsigned char currentLevel = 1;
+    ghost_manager.setLevel(currentLevel);
 
     //Get the current time and store it in a variable.
     previous_time = chrono::steady_clock::now();
