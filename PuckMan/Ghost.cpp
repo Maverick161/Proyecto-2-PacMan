@@ -72,7 +72,7 @@ void Ghost::draw(bool i_flash, RenderWindow& i_window)
 	Sprite face;
 
 	Texture texture;
-	texture.loadFromFile("/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Images/Ghost16.png");
+	texture.loadFromFile("/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Images/Ghost16.png");
 
 	body.setTexture(texture);
 	body.setPosition(position.x, position.y);

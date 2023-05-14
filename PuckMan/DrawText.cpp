@@ -17,7 +17,7 @@ void draw_text(bool i_center, unsigned short i_x, unsigned short i_y, const stri
 	Sprite character_sprite;
 
 	Texture font_texture;
-	font_texture.loadFromFile("/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Images/Font.png");
+	font_texture.loadFromFile("/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Images/Font.png");
 
 	//96 caracteres de la fuente
 	character_width = font_texture.getSize().x / 96;

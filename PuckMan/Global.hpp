@@ -2,8 +2,6 @@
 
 using namespace std;
 
-
-
 constexpr unsigned char CELL_SIZE = 16;
 
 constexpr unsigned char FONT_HEIGHT = 16;
