@@ -85,12 +85,12 @@ array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP
 
 					break;
 				}
-				//Poder
-				case 'o':
+				//Poder if ((pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost())%(500)==0){}
+
+                case 'o':
 				{
-                    if ((pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost())%200==0){
-                        output_map[b][a] = Cell::Energizer;
-                    }
+                    output_map[b][a] = Cell::Energizer;
+                    //if ((pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost())%(500)==0){}
 				}
 			}
 		}

@@ -9,10 +9,8 @@
 
 GhostManager::GhostManager() :
         current_wave(0),
-        wave_timer(LONG_SCATTER_DURATION),
-        ghosts({Ghost(0), Ghost(1), Ghost(2), Ghost(3)})
+        wave_timer(LONG_SCATTER_DURATION)
 {
-
 }
 
 void GhostManager::draw(bool i_flash, RenderWindow& i_window)
@@ -30,17 +28,25 @@ void GhostManager::reset(unsigned char i_level, const std::array<Position, 4>& i
     //This is how we're increasing the difficulty.
     wave_timer = static_cast<unsigned short>(LONG_SCATTER_DURATION / pow(2, i_level));
 
-    for (unsigned char a = 0; a < 4; a++)
+    // Calcula el número de fantasmas basado en el nivel, con un mínimo de 1 y un máximo de 4
+    unsigned char numGhosts = min(static_cast<unsigned char>(4), static_cast<unsigned char>(i_level + 1));
+    ghosts.clear(); // Borra cualquier fantasma anterior
+
+    for (unsigned char a = 0; a < numGhosts; a++)
     {
-        ghosts[a].set_position(i_ghost_positions[a].x, i_ghost_positions[a].y);
+        Ghost newGhost(a);
+        newGhost.set_position(i_ghost_positions[a].x, i_ghost_positions[a].y);
+        ghosts.push_back(newGhost);
     }
 
     for (Ghost& ghost : ghosts)
     {
-        //We use the blue ghost to get the location of the house and the red ghost to get the location of the exit.
-        ghost.reset(ghosts[2].get_position(), ghosts[0].get_position());
-    }
-}
+        //Usamos el fantasma azul para obtener la ubicación de la casa y el fantasma rojo para obtener la ubicación de la salida
+        // Necesitamos asegurarnos de que hay al menos 3 fantasmas antes de hacer esto
+        if (ghosts.size() >= 1) {
+            ghost.reset(ghosts[0].get_position(), ghosts[3].get_position());
+        }
+}}
 
 void GhostManager::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, Pacman& i_pacman)
 {

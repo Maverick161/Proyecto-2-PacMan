@@ -11,10 +11,12 @@ class GhostManager
     //Damn, I really used a lot of timers.
     unsigned short wave_timer;
 
-    array<Ghost, 4> ghosts;
+    //array<Ghost, 4> ghosts;
+
+    vector<Ghost> ghosts;
+
 public:
     GhostManager();
-
     void draw(bool i_flash, RenderWindow& i_window);
     void reset(unsigned char i_level, const array<Position, 4>& i_ghost_positions);
     void update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, Pacman& i_pacman);

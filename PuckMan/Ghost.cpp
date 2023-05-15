@@ -185,13 +185,10 @@ void Ghost::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WID
     array<bool, 4> walls{};
 
     //Cuando el fantasma se asusta
-    if (0 == frightened_mode && i_pacman.get_energizer_timer() == ENERGIZER_DURATION / pow(2, i_level))
+    if (0 == frightened_mode && i_pacman.get_energizer_timer() == ENERGIZER_DURATION / pow(2, i_level)) // en lugar de i_pacman.get_energizer_timer() > 0
     {
         frightened_speed_timer = GHOST_FRIGHTENED_SPEED;
-
         frightened_mode = 1;
-
-
     }
     else if (0 == i_pacman.get_energizer_timer() && 1 == frightened_mode)
     {
