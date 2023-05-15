@@ -3,6 +3,15 @@
 
 #include "Global.hpp"
 #include "DrawMap.hpp"
+#include "Pacman.hpp"
+#include "Ghost.hpp"
+#include "MapCollision.hpp"
+
+Pacman pacman; // instancia de la clase Pacman de su .cpp
+
+colisionGhosts colisionghosts; // instancia de la clase colisionGhosts de Ghosts.cpp
+
+colisionPellet colisionpellet;  // instancia de la clase colisionPellet de MapCollision.cpp
 
 void draw_map(const array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, RenderWindow& i_window)
 {
@@ -31,15 +40,19 @@ void draw_map(const array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, RenderWind
 				}
 				case Cell::Energizer:
 				{
-					sprite.setTextureRect(sf::IntRect(CELL_SIZE, CELL_SIZE, CELL_SIZE, CELL_SIZE));
+                    if ((pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost())>=500){
+                        sprite.setTextureRect(IntRect(CELL_SIZE, CELL_SIZE, CELL_SIZE, CELL_SIZE));
 
-					i_window.draw(sprite);
+                        i_window.draw(sprite);
 
-					break;
+                        //break;
+                    }
+
+					//break;
 				}
 				case Cell::Pellet:
 				{
-					sprite.setTextureRect(sf::IntRect(0, CELL_SIZE, CELL_SIZE, CELL_SIZE));
+					sprite.setTextureRect(IntRect(0, CELL_SIZE, CELL_SIZE, CELL_SIZE));
 
 					i_window.draw(sprite);
 
