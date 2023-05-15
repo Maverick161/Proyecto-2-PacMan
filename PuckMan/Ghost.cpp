@@ -377,7 +377,7 @@ void Ghost::update_target(unsigned char i_pacman_direction, const Position& i_gh
                 target = home_exit;
 
                 puntajeGhost += 50;
-                cout << "Se comio un ghost: " << puntajeGhost << std::endl;
+                //cout << "Se comio un ghost: " << puntajeGhost << std::endl;
 
             }
         }
