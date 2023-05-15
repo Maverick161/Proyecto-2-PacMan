@@ -5,6 +5,14 @@
 #include "Global.hpp"
 #include "Pacman.hpp"
 #include "ConvertSketch.hpp"
+#include "Ghost.hpp"
+#include "MapCollision.hpp"
+
+Pacman pacman; // instancia de la clase Pacman de su .cpp
+
+colisionGhosts colisionghosts; // instancia de la clase colisionGhosts de Ghosts.cpp
+
+colisionPellet colisionpellet;  // instancia de la clase colisionPellet de MapCollision.cpp
 
 array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP_HEIGHT>& i_map_sketch, array<Position, 4>& i_ghost_positions, Pacman& i_pacman)
 {
@@ -80,8 +88,9 @@ array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP
 				//Poder
 				case 'o':
 				{
-
-					output_map[b][a] = Cell::Energizer;
+                    if ((pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost())%200==0){
+                        output_map[b][a] = Cell::Energizer;
+                    }
 				}
 			}
 		}

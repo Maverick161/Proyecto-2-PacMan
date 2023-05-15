@@ -15,7 +15,7 @@
 using namespace sf;
 using namespace std;
 
-//el tamano de la pantalla es de 336x352
+// El tamano de la pantalla es de 336x352
 
 int main()
 {
@@ -65,18 +65,19 @@ int main()
     //SFML thing. Stores events, I think.
     Event event;
 
+    // Crea la ventana de acuerdo al laberinto
     RenderWindow window(VideoMode(CELL_SIZE * MAP_WIDTH * SCREEN_RESIZE, (FONT_HEIGHT + CELL_SIZE * MAP_HEIGHT) * SCREEN_RESIZE), "PuckMan", Style::Close);
 
     //tamano de la pantalla
     window.setView(View(FloatRect(0, 0, CELL_SIZE * MAP_WIDTH, FONT_HEIGHT + CELL_SIZE * MAP_HEIGHT)));
 
-    GhostManager ghost_manager;
+    GhostManager ghost_manager; // instancia de la clase GhostManager de su .cpp
 
-    Pacman pacman;
+    Pacman pacman; // instancia de la clase Pacman de su .cpp
 
-    colisionGhosts colisionghosts;
+    colisionGhosts colisionghosts; // instancia de la clase colisionGhosts de Ghosts.cpp
 
-    colisionPellet colisionpellet;
+    colisionPellet colisionpellet;  // instancia de la clase colisionPellet de MapCollision.cpp
 
     //Generating a random seed.
     srand(static_cast<unsigned>(time(0)));

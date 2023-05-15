@@ -158,7 +158,6 @@ void Ghost::reset(const Position& i_home, const Position& i_home_exit)
     direction = 0;
     frightened_mode = 0;
     frightened_speed_timer = 0;
-    //puntajeGhost = 0;
 
     animation_timer = 0;
 
@@ -287,7 +286,6 @@ void Ghost::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WID
             {
                 while (1 == walls[random_direction] || random_direction == (2 + direction) % 4)
                 {
-
                     random_direction = rand() % 4;
                 }
 
@@ -295,7 +293,6 @@ void Ghost::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WID
             }
             else
             {
-
                 direction = (2 + direction) % 4;
             }
         }
@@ -305,7 +302,7 @@ void Ghost::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WID
         }
     }
 
-    //
+    //direccion del fantasma en cuanto a velocidad
     if (1 == move)
     {
         switch (direction)
@@ -380,7 +377,7 @@ void Ghost::update_target(unsigned char i_pacman_direction, const Position& i_gh
                 target = home_exit;
 
                 puntajeGhost += 50;
-                cout << "ghost: " << puntajeGhost << std::endl;
+                cout << "Se comio un ghost: " << puntajeGhost << std::endl;
 
             }
         }

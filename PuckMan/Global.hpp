@@ -1,10 +1,19 @@
 #pragma once
+/*#include "Pacman.hpp"
+#include "Ghost.hpp"
+#include "MapCollision.hpp"*/
 
 using namespace std;
 
-constexpr unsigned char CELL_SIZE = 16;
+//Pacman pacman; // instancia de la clase Pacman de su .cpp
 
-constexpr unsigned char FONT_HEIGHT = 16;
+//colisionGhosts colisionghosts; // instancia de la clase colisionGhosts de Ghosts.cpp
+
+//colisionPellet colisionpellet;  // instancia de la clase colisionPellet de MapCollision.cpp
+
+constexpr unsigned char CELL_SIZE = 16; // tamano de las celdas
+
+constexpr unsigned char FONT_HEIGHT = 16; // tamano de las letras
 
 //distancia de celdas que busca el fantasma rosado desde pacman
 constexpr unsigned char GHOST_1_CHASE = 2;
@@ -45,6 +54,8 @@ constexpr unsigned short FRAME_DURATION = 16667;
 constexpr unsigned short GHOST_FLASH_START = 64;
 constexpr unsigned short LONG_SCATTER_DURATION = 512;
 constexpr unsigned short SHORT_SCATTER_DURATION = 256;
+
+//unsigned int sumapuntaje = pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost();
 
 enum Cell
 {

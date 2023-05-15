@@ -10,11 +10,11 @@ class Pacman
 	bool animation_over;
 	bool dead;
 
-	unsigned char direction;
+	unsigned char direction; // variable para la direccion
 
-    unsigned int puntaje;
+    unsigned int puntaje; // variable para el puntaje cuando colecta un power
 
-    unsigned int vidas;
+    unsigned int vidas; // variable para almacenar las vidas
 
 	//timers
 	unsigned short animation_timer;
