@@ -4,21 +4,15 @@ using namespace std;
 
 class GhostManager
 {
-	//The ghosts will switch between the scatter mode and the chase mode before permanently chasing Pacman.
-	//So we need this to keep track of the waves.
-	unsigned char current_wave;
 
-	//Damn, I really used a lot of timers.
-	unsigned short wave_timer;
-
-	array<Ghost, 4> ghosts;
 public:
-	GhostManager();
-	void draw(bool i_flash, RenderWindow& i_window);
-	void reset(unsigned char i_level, const array<Position, 4>& i_ghost_positions);
-	void update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, Pacman& i_pacman);
-    void setLevel(unsigned char level);
+    GhostManager();
+    void draw(bool i_flash, RenderWindow& i_window);
+    void reset(unsigned char i_level, const std::array<Position, 4>& i_ghost_positions);
+    void update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, Pacman& i_pacman);
 
 private:
-    unsigned char current_level;
+    unsigned char current_wave;
+    unsigned short wave_timer;
+    std::vector<Ghost> ghosts;  // Cambiado de std::array a std::vector
 };
