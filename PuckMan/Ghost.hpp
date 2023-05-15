@@ -4,7 +4,6 @@ using namespace std;
 
 class Ghost
 {
-
     bool movement_mode;
     bool use_door;
 
@@ -30,6 +29,7 @@ class Ghost
     //target actual
     Position target;
 public:
+
     Ghost(unsigned char i_id);
 
     bool pacman_collision(const Position& i_pacman_position);
@@ -46,4 +46,13 @@ public:
     void update_target(unsigned char i_pacman_direction, const Position& i_ghost_0_position, const Position& i_pacman_position);
 
     Position get_position();
+
+};
+
+class colisionGhosts{
+
+public:
+
+    unsigned int get_scoreGhost(); // metodo para obtener el puntaje cuando pacman se comen a un fantasma
+
 };

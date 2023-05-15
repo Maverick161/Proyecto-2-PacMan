@@ -7,6 +7,8 @@
 #include "Ghost.hpp"
 #include "MapCollision.hpp"
 
+unsigned int puntajeGhost; // variable para guardar los puntos cuando pacman se come un fantasma
+
 Ghost::Ghost(unsigned char i_id) :
         id(i_id)
 {
@@ -156,6 +158,7 @@ void Ghost::reset(const Position& i_home, const Position& i_home_exit)
     direction = 0;
     frightened_mode = 0;
     frightened_speed_timer = 0;
+    //puntajeGhost = 0;
 
     animation_timer = 0;
 
@@ -355,6 +358,7 @@ void Ghost::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WID
             frightened_mode = 2;
 
             target = home;
+
         }
     }
 }
@@ -374,6 +378,10 @@ void Ghost::update_target(unsigned char i_pacman_direction, const Position& i_gh
                 frightened_mode = 0;
 
                 target = home_exit;
+
+                puntajeGhost += 50;
+                cout << "ghost: " << puntajeGhost << std::endl;
+
             }
         }
     }
@@ -381,7 +389,7 @@ void Ghost::update_target(unsigned char i_pacman_direction, const Position& i_gh
     {
         if (0 == movement_mode) //movimiento de fantasmas
         {
-            //cada fantasma va a la esquina
+            //cada fantasma va a la esquina al inicio del juego
             switch (id)
             {
                 case 0:
@@ -507,4 +515,8 @@ void Ghost::update_target(unsigned char i_pacman_direction, const Position& i_gh
 Position Ghost::get_position() //metodo para obtener la posicion del fantasma
 {
     return position;
+}
+
+unsigned int colisionGhosts::get_scoreGhost() {
+    return puntajeGhost;
 }

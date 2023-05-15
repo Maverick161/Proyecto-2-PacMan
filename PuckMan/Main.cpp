@@ -74,6 +74,8 @@ int main()
 
     Pacman pacman;
 
+    colisionGhosts colisionghosts;
+
     colisionPellet colisionpellet;
 
     //Generating a random seed.
@@ -182,7 +184,7 @@ int main()
 
                     draw_text(0, 0, CELL_SIZE * MAP_HEIGHT, "Level: " + to_string(1 + level), window);
 
-                    draw_text(0, 110, CELL_SIZE * MAP_HEIGHT, "Score: " + to_string(pacman.get_score() + colisionpellet.get_scorePellet()), window);
+                    draw_text(0, 110, CELL_SIZE * MAP_HEIGHT, "Score: " + to_string(pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost()), window);
 
                     draw_text(0, 220, CELL_SIZE * MAP_HEIGHT, "life: " + to_string(pacman.get_vidas()), window);
                 }
