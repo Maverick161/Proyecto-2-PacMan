@@ -131,9 +131,10 @@ void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WI
 	walls[2] = map_collision(0, 0, position.x - PACMAN_SPEED, position.y, i_map);
 	walls[3] = map_collision(0, 0, position.x, PACMAN_SPEED + position.y, i_map);
 
+
 	if (1 == Keyboard::isKeyPressed(Keyboard::Right))
 	{
-		if (0 == walls[0]) //You can't turn in this direction if there's a wall there.
+		if (0 == walls[0]) // no virar en esta direccion si se encuentra un muro
 		{
 			direction = 0;
 		}

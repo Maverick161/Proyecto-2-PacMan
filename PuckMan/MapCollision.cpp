@@ -4,6 +4,8 @@
 #include "Global.hpp"
 #include "MapCollision.hpp"
 
+unsigned int puntajePellet;
+
 bool map_collision(bool i_collect_pellets, bool i_use_door, short i_x, short i_y, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map)
 {
 	bool output = 0;
@@ -73,7 +75,8 @@ bool map_collision(bool i_collect_pellets, bool i_use_door, short i_x, short i_y
 				else if (Cell::Pellet == i_map[x][y])
 				{
 					i_map[x][y] = Cell::Empty;
-
+                    puntajePellet+=10;
+                    cout << "El valor de puntaje es: " << puntajePellet << std::endl;
                 }
 			}
 		}
@@ -81,3 +84,21 @@ bool map_collision(bool i_collect_pellets, bool i_use_door, short i_x, short i_y
 
 	return output;
 }
+
+/*colisionPellet::colisionPellet() :
+        puntajePellet(0)
+
+{
+}*/
+
+unsigned int colisionPellet::get_scorePellet() {
+    return puntajePellet;
+}
+    /*short x = 0;
+    short y = 0;
+
+    if (Cell::Pellet == i_map[x][y])
+    {
+        puntajePellet+=10;
+        cout << "El valor de puntaje es: " << puntajePellet << std::endl;
+    }*/

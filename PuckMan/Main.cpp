@@ -53,7 +53,7 @@ int main()
             " #....#...#...#....# ",
             " #.######.#.######.# ",
             " #.................# ",
-            " ################### "
+            " ################### " // 21 filas x 21 columnas
     };
 
     // crea un mapa del juego de tamaño MAP_WIDTH x MAP_HEIGHT, donde cada celda está inicializada utilizando el constructor por defecto de la clase o enumeración Cell.
@@ -73,6 +73,8 @@ int main()
     GhostManager ghost_manager;
 
     Pacman pacman;
+
+    colisionPellet colisionpellet;
 
     //Generating a random seed.
     srand(static_cast<unsigned>(time(0)));
@@ -155,6 +157,10 @@ int main()
                 {
                     //despues de ganar cada nivel, se reduce la duracion de las olas de ataque y poderes
                     level++;
+
+                    for (unsigned char i = 0; i < level && i < 4; ++i){
+                        ghost_manager.activateGhost(i);
+                    }
                 }
 
                 map = convert_sketch(map_sketch, ghost_positions, pacman);
@@ -176,7 +182,7 @@ int main()
 
                     draw_text(0, 0, CELL_SIZE * MAP_HEIGHT, "Level: " + to_string(1 + level), window);
 
-                    draw_text(0, 110, CELL_SIZE * MAP_HEIGHT, "Score: " + to_string(pacman.get_score()), window);
+                    draw_text(0, 110, CELL_SIZE * MAP_HEIGHT, "Score: " + to_string(pacman.get_score() + colisionpellet.get_scorePellet()), window);
 
                     draw_text(0, 220, CELL_SIZE * MAP_HEIGHT, "life: " + to_string(pacman.get_vidas()), window);
                 }
