@@ -80,6 +80,7 @@ array<array<Cell, MAP_HEIGHT>, MAP_WIDTH> convert_sketch(const array<string, MAP
 				//Poder
 				case 'o':
 				{
+
 					output_map[b][a] = Cell::Energizer;
 				}
 			}
