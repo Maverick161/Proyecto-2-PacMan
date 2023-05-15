@@ -61,7 +61,7 @@ struct Position //estructura de datos para la posicion X y Y
 	short x;
 	short y;
 
-	bool operator==(const Position& i_position)
+	bool operator==(const Position& i_position) const
 	{
 		return this->x == i_position.x && this->y == i_position.y;
 	}
