@@ -62,7 +62,7 @@ int main()
     //posicion inicial de los fantasmas
     array<Position, 4> ghost_positions;
 
-    //SFML thing. Stores events, I think.
+    //Palabra de SFML guarda los eventos
     Event event;
 
     // Crea la ventana de acuerdo al laberinto
