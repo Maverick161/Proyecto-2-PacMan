@@ -35,7 +35,7 @@ int main()
     array<string, MAP_HEIGHT> map_sketch = {
             " ################### ",
             " #........#........# ",
-            " #.##.###.#.###.##o# ",
+            " #o##.###.#.###.##o# ",
             " #.................# ",
             " #.##.#.#####.#.##.# ",
             " #....#...#...#....# ",
@@ -48,7 +48,7 @@ int main()
             " ####.# ##### #.#### ",
             " #........#........# ",
             " #.##.###.#.###.##.# ",
-            " #o.#.....P.....#..# ",
+            " #o.#.....P.....#.o# ",
             " ##.#.#.#####.#.#.## ",
             " #....#...#...#....# ",
             " #.######.#.######.# ",
@@ -197,10 +197,17 @@ int main()
                     if (1 == game_won)
                     {
                         draw_text(1, 0, 0, "Siguiente nivel", window); // pausa para el siguiente nivel
+                        draw_text(0, 120, 200, "Puntos: " + to_string(pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost()), window); // label de puntos que se van obteniendo
+                        draw_text(0, 55, 300, "Presione enter para continuar", window); // pausa para el siguiente nivel
+
+
                     }
                     else
                     {
                         draw_text(1, 0, 0, "Juego Perdido", window); // pausa cuando se acaban las vidas de pacman
+                        draw_text(0, 120, 200, "Puntos: " + to_string(pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost()), window); // label de puntos que se van obteniendo
+                        draw_text(0, 55, 300, "Presione enter para continuar", window); // pausa para el siguiente nivel
+
                     }
                 }
                 window.display();
