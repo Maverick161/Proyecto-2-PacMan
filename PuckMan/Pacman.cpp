@@ -17,7 +17,7 @@ Pacman::Pacman() : // valor de las variables al inicio del juego
 	dead(0),
 	direction(0),
 	energizer_timer(0),
-    //intocable_timer(0),
+    invulnerability_timer(0),
 	position({0, 0})
 
 {
@@ -67,7 +67,7 @@ void Pacman::draw(bool i_victory, RenderWindow& i_window) // funcion para dibuja
 		{
 			animation_timer++;
 
-			texture.loadFromFile("/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Images/PacmanDeath16.png");
+			texture.loadFromFile("/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Images/PacmanDeath16.png");
 
 			sprite.setTexture(texture);
 			sprite.setTextureRect(IntRect(CELL_SIZE * frame, 0, CELL_SIZE, CELL_SIZE));
@@ -83,7 +83,7 @@ void Pacman::draw(bool i_victory, RenderWindow& i_window) // funcion para dibuja
 	}
 	else
 	{    //animaciones mientras pacman este vivo
-		texture.loadFromFile("/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Images/Pacman16.png");
+		texture.loadFromFile("/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Images/Pacman16.png");
 
 		sprite.setTexture(texture);
 		sprite.setTextureRect(IntRect(CELL_SIZE * frame, CELL_SIZE * direction, CELL_SIZE, CELL_SIZE));
@@ -133,10 +133,9 @@ void Pacman::set_position(short i_x, short i_y) // funcion para acceder a la pos
 
 void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map) // funcion para actualizar lo que pasa en el laberinto
 {
-    // resta tiempo al temporizador de invulnerabilidad cuando se activa
-    //if (intocable_timer>0){
-      //  intocable_timer--;
-    //}
+    if (invulnerability_timer > 0){
+        invulnerability_timer--;
+    }
 
 	array<bool, 4> walls{}; // colision entre las paredes
 	walls[0] = map_collision(0, 0, PACMAN_SPEED + position.x, position.y, i_map);
@@ -238,10 +237,31 @@ Position Pacman::get_position() // accede a la posicion de pacman
 	return position;
 }
 
-void Pacman::loseLife() { //metodo para reducir la vida cuando pacman toca un fantasma
-    vidas--;
-    if(vidas <= 0) {
-        set_dead(1); // muere pacman cuando ya no hay vidas
+//Esta es la implementación de Pacman::loseLife
+// Modificación de la función loseLife para aceptar el mapa del juego como un argumento
+void Pacman::loseLife(const array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& game_map) {
+    // Verifica si el temporizador de invulnerabilidad está activo
+    if(invulnerability_timer == 0) {
+        // Si no está activo, reduce la vida de Pacman
+        vidas--;
 
+        // Activa el temporizador de invulnerabilidad
+        invulnerability_timer = INVULNERABILITY_TIME;
+
+        // Verifica si Pacman se ha quedado sin vidas
+        if(vidas <= 0) {
+            // Si Pacman se ha quedado sin vidas, marca a Pacman como muerto
+            set_dead(1);
+        } else {
+            // Si Pacman todavía tiene vidas, genera una nueva posición aleatoria que no sea una pared
+            short new_x, new_y;
+            do {
+                new_x = rand() % MAP_WIDTH;
+                new_y = rand() % MAP_HEIGHT;
+            } while(game_map[new_x][new_y] == Cell::Wall);
+
+            // Establece la posición de Pacman a la nueva posición aleatoria
+            set_position(new_x * CELL_SIZE, new_y * CELL_SIZE);
+        }
     }
 }

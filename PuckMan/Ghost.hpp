@@ -28,6 +28,9 @@ class Ghost
 
     //target actual
     Position target;
+
+private:
+    sf::Clock disappearanceClock; // Añade esto a tus variables miembro privadas
 public:
 
     Ghost(unsigned char i_id); // declaracion del constructor con el paramatero de la identidad para cada fantasma
@@ -42,6 +45,8 @@ public:
     void reset(const Position& i_home, const Position& i_home_exit); // declaracion que recibe como parametro la posicion del home y de la puerta del home por reiniciar
     void set_position(short i_x, short i_y); // declaracion de las coordenadas
     void switch_mode(); // declaracion de cuando cambian de modo los fantasmas
+    void disappear();
+    void reappearRandomly();
     void update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, Ghost& i_ghost_0, Pacman& i_pacman); // declaracion para actualizar el nive, el mapa, los fantasmas y el pacman
     void update_target(unsigned char i_pacman_direction, const Position& i_ghost_0_position, const Position& i_pacman_position); // declaracion para actualizar la posicion final
 

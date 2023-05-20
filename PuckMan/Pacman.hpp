@@ -21,17 +21,16 @@ class Pacman
 	unsigned short energizer_timer;
     //unsigned short intocable_timer;
 
+
 	// estructura para la posicion de pacman
 	Position position;
 
 public:
 	Pacman(); // declaracion del constructor de pacman
-
+    void loseLife(const array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& game_map);
 	bool get_animation_over(); // obtiene animacion de cuando pacman muere
 	bool get_dead(); // obtiene el booleano de cuando pacman muere
-
 	unsigned char get_direction(); // metodo que obtiene la direccion de pacman
-
 	unsigned short get_energizer_timer(); // metodo para el timer de cuando pacman adquiere un poder
 
     //short randomX, randomY;// posiciones random cada vez que muere
@@ -52,4 +51,7 @@ public:
     unsigned int get_score(); // metodo para obtener el puntaje
 
     unsigned int get_vidas(); // metodo para obtener las vidas de pacman
+
+    unsigned short invulnerability_timer;
+    static const unsigned short INVULNERABILITY_TIME = 60;
 };

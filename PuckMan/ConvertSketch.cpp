@@ -1,7 +1,7 @@
 #include <array>
 #include <string>
 #include <SFML/Graphics.hpp>
-
+#include <cstdlib> // Para rand()
 #include "Global.hpp"
 #include "Pacman.hpp"
 #include "ConvertSketch.hpp"
