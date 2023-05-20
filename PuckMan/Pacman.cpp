@@ -5,48 +5,53 @@
 #include "Global.hpp"
 #include "Pacman.hpp"
 #include "MapCollision.hpp"
+#include "ConvertSketch.hpp"
+//#include "contrAndroid.h"
 
-Pacman::Pacman() :
+//Controller controller; // instancia de la clase Controler de contrAndroid.cpp
+
+Pacman::Pacman() : // valor de las variables al inicio del juego
     puntaje(0),
     vidas(3),
 	animation_over(0),
 	dead(0),
 	direction(0),
 	energizer_timer(0),
+    //intocable_timer(0),
 	position({0, 0})
 
 {
 }
 
-unsigned int Pacman::get_score() {
+unsigned int Pacman::get_score() { // metodo para obtener el puntaje de pacman
     return puntaje;
 }
 
-unsigned int Pacman::get_vidas(){
+unsigned int Pacman::get_vidas(){ // metodo para obtener las vidas de pacman
     return vidas;
 }
 
-bool Pacman::get_animation_over()
+bool Pacman::get_animation_over() // metodo para obtener la animacion cuando muere pacman
 {
 	return animation_over;
 }
 
-bool Pacman::get_dead()
+bool Pacman::get_dead() // metodo para obtener cuando muere pacman
 {
 	return dead;
 }
 
-unsigned char Pacman::get_direction()
+unsigned char Pacman::get_direction() // metodo para obtener la direccion de pacman
 {
 	return direction;
 }
 
-unsigned short Pacman::get_energizer_timer()
+unsigned short Pacman::get_energizer_timer() // metodo para obtener el tiempo mientras pacman tiene un poder
 {
 	return energizer_timer;
 }
 
-void Pacman::draw(bool i_victory, RenderWindow& i_window)
+void Pacman::draw(bool i_victory, RenderWindow& i_window) // funcion para dibujar en pantalla la animacion
 {
 	unsigned char frame = static_cast<unsigned char>(floor(animation_timer / static_cast<float>(PACMAN_ANIMATION_SPEED)));
 
@@ -56,7 +61,7 @@ void Pacman::draw(bool i_victory, RenderWindow& i_window)
 
 	sprite.setPosition(position.x, position.y);
 
-	if (1 == dead || 1 == i_victory)
+	if (1 == dead || 1 == i_victory) // animacion para cuando se pierde el juego o se pasa de nivel
 	{
 		if (animation_timer < PACMAN_DEATH_FRAMES * PACMAN_ANIMATION_SPEED)
 		{
@@ -72,12 +77,12 @@ void Pacman::draw(bool i_victory, RenderWindow& i_window)
 		}
 		else
 		{
-			//You can only die once.
+			//se terminan las animaciones
 			animation_over = 1;
 		}
 	}
 	else
-	{
+	{    //animaciones mientras pacman este vivo
 		texture.loadFromFile("/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Images/Pacman16.png");
 
 		sprite.setTexture(texture);
@@ -85,11 +90,14 @@ void Pacman::draw(bool i_victory, RenderWindow& i_window)
 
 		i_window.draw(sprite);
 
-		animation_timer = (1 + animation_timer) % (PACMAN_ANIMATION_FRAMES * PACMAN_ANIMATION_SPEED);
+		animation_timer = (1 + animation_timer) % (PACMAN_ANIMATION_FRAMES * PACMAN_ANIMATION_SPEED);//tiempo de animacion en juego
+
+        //controller.SocketServer();
+
 	}
 }
 
-void Pacman::reset()
+void Pacman::reset() // variables iniciales del personaje de pacman para la funcion de reset
 {
     puntaje = 0;
     vidas = 3;
@@ -102,12 +110,12 @@ void Pacman::reset()
 	energizer_timer = 0;
 }
 
-void Pacman::set_animation_timer(unsigned short i_animation_timer)
+void Pacman::set_animation_timer(unsigned short i_animation_timer) // funcion para obtener el tiempo de animacion
 {
 	animation_timer = i_animation_timer;
 }
 
-void Pacman::set_dead(bool i_dead)
+void Pacman::set_dead(bool i_dead) // funcion para terminar la animacion cuando muere pacman
 {
 	dead = i_dead;
 
@@ -118,14 +126,19 @@ void Pacman::set_dead(bool i_dead)
 	}
 }
 
-void Pacman::set_position(short i_x, short i_y)
+void Pacman::set_position(short i_x, short i_y) // funcion para acceder a la posicion x y y
 {
 	position = {i_x, i_y};
 }
 
-void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map)
+void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map) // funcion para actualizar lo que pasa en el laberinto
 {
-	array<bool, 4> walls{};
+    // resta tiempo al temporizador de invulnerabilidad cuando se activa
+    //if (intocable_timer>0){
+      //  intocable_timer--;
+    //}
+
+	array<bool, 4> walls{}; // colision entre las paredes
 	walls[0] = map_collision(0, 0, PACMAN_SPEED + position.x, position.y, i_map);
 	walls[1] = map_collision(0, 0, position.x, position.y - PACMAN_SPEED, i_map);
 	walls[2] = map_collision(0, 0, position.x - PACMAN_SPEED, position.y, i_map);
@@ -133,8 +146,9 @@ void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WI
 
 
 	if (1 == Keyboard::isKeyPressed(Keyboard::Right))
-	{
-		if (0 == walls[0]) // no virar en esta direccion si se encuentra un muro
+	{  // no virar en esta direccion si se encuentra un muro
+
+		if (0 == walls[0])
 		{
 			direction = 0;
 		}
@@ -164,7 +178,7 @@ void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WI
 		}
 	}
 
-	if (0 == walls[direction])
+	if (0 == walls[direction]) // si se mueve hacia una direccion en la cual no hay muros, el movimiento es valido
 	{
 		switch (direction)
 		{
@@ -193,7 +207,7 @@ void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WI
 		}
 	}
 
-	if (-CELL_SIZE >= position.x)
+	if (-CELL_SIZE >= position.x) // movimiento en el eje x
 	{
 		position.x = CELL_SIZE * MAP_WIDTH - PACMAN_SPEED;
 	}
@@ -206,17 +220,20 @@ void Pacman::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WI
 	{
 		energizer_timer = static_cast<unsigned short>(ENERGIZER_DURATION / pow(2, i_level));
 
-        puntaje += 10;
-        cout << "El valor de puntaje es: " << puntaje << std::endl;
+        puntaje += 10; //  puntaje de cuando pacman come un poder
+
+        //if (intocable_timer==0){ //pacman pierde una vida cuando no esta vulnerable
+          //  loseLife();
+        //}
 	}
 
 	else
 	{
-		energizer_timer = max(0, energizer_timer - 1);
+		energizer_timer = max(0, energizer_timer - 1); // cuando termina el tiempo del poder
 	}
 }
 
-Position Pacman::get_position()
+Position Pacman::get_position() // accede a la posicion de pacman
 {
 	return position;
 }
@@ -225,5 +242,6 @@ void Pacman::loseLife() { //metodo para reducir la vida cuando pacman toca un fa
     vidas--;
     if(vidas <= 0) {
         set_dead(1); // muere pacman cuando ya no hay vidas
+
     }
 }

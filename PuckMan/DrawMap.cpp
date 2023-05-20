@@ -30,7 +30,7 @@ void draw_map(const array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, RenderWind
 
 			switch (i_map[a][b])
 			{
-				case Cell::Door:
+				case Cell::Door: // puerta de la celda de los fantasmas
 				{
 					sprite.setTextureRect(sf::IntRect(2 * CELL_SIZE, CELL_SIZE, CELL_SIZE, CELL_SIZE));
 
@@ -38,9 +38,9 @@ void draw_map(const array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, RenderWind
 
 					break;
 				}
-				case Cell::Energizer:
+				case Cell::Energizer: // poder
 				{
-                    if ((pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost())>=500){
+                    if ((pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost())>=200){
                         sprite.setTextureRect(IntRect(CELL_SIZE, CELL_SIZE, CELL_SIZE, CELL_SIZE));
 
                         i_window.draw(sprite);
@@ -50,7 +50,7 @@ void draw_map(const array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, RenderWind
 
 					//break;
 				}
-				case Cell::Pellet:
+				case Cell::Pellet: // puntos del laberinto
 				{
 					sprite.setTextureRect(IntRect(0, CELL_SIZE, CELL_SIZE, CELL_SIZE));
 
@@ -58,7 +58,7 @@ void draw_map(const array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, RenderWind
 
 					break;
 				}
-				case Cell::Wall:
+				case Cell::Wall: // paredes del laberinto
 				{
 					bool down = 0;
 					bool left = 0;

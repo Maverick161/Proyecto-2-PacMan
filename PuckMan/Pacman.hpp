@@ -1,14 +1,14 @@
 #pragma once
 #include <iostream>
+#include "Global.hpp"
 
 using namespace sf;
 using namespace std;
 
 class Pacman
 {
-	//This is used for the death animation.
-	bool animation_over;
-	bool dead;
+	bool animation_over; // para revisar si la animacion de pacman ha terminado
+	bool dead; // para revisar cuando muere pacman
 
 	unsigned char direction; // variable para la direccion
 
@@ -16,15 +16,16 @@ class Pacman
 
     unsigned int vidas; // variable para almacenar las vidas
 
-	//timers
+	//timers de animacion, poder y vulnerabilidad
 	unsigned short animation_timer;
 	unsigned short energizer_timer;
+    //unsigned short intocable_timer;
 
-	//Current location of this creature, commonly known as Pacman.
+	// estructura para la posicion de pacman
 	Position position;
 
 public:
-	Pacman();
+	Pacman(); // declaracion del constructor de pacman
 
 	bool get_animation_over(); // obtiene animacion de cuando pacman muere
 	bool get_dead(); // obtiene el booleano de cuando pacman muere
@@ -33,13 +34,18 @@ public:
 
 	unsigned short get_energizer_timer(); // metodo para el timer de cuando pacman adquiere un poder
 
-	void draw(bool i_victory, RenderWindow& i_window); // metodo para renderizar el objeto
+    //short randomX, randomY;// posiciones random cada vez que muere
+
+    // Generar una semilla única basada en el tiempo actual
+    unsigned int seed = static_cast<unsigned int>(time(0));
+
+	void draw(bool i_victory, RenderWindow& i_window); // funcion para renderizar el objeto
 	void reset(); // reiniciar las variables del juego
-	void set_animation_timer(unsigned short i_animation_timer); // metodo para la animacion del juego cuando hay un poder en pacman
-	void set_dead(bool i_dead); // metodo para verificar la muerte del jugador
-	void set_position(short i_x, short i_y); // metodo para verificar la posicion del jugador
-	void update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map); // metodo para actualizar las variables del juego
-    void loseLife();
+	void set_animation_timer(unsigned short i_animation_timer); //  animacion del juego cuando hay un poder en pacman
+	void set_dead(bool i_dead); // verificar la muerte del jugador
+	void set_position(short i_x, short i_y); //verificar la posicion del jugador
+	void update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map); // actualizar las variables del juego
+    void loseLife(); // verificar cuando se pierde una vida
 
 	Position get_position(); // estructura para la posicion de pacman en el juego
 

@@ -1,15 +1,6 @@
 #pragma once
-/*#include "Pacman.hpp"
-#include "Ghost.hpp"
-#include "MapCollision.hpp"*/
 
 using namespace std;
-
-//Pacman pacman; // instancia de la clase Pacman de su .cpp
-
-//colisionGhosts colisionghosts; // instancia de la clase colisionGhosts de Ghosts.cpp
-
-//colisionPellet colisionpellet;  // instancia de la clase colisionPellet de MapCollision.cpp
 
 constexpr unsigned char CELL_SIZE = 16; // tamano de las celdas
 
@@ -40,7 +31,6 @@ constexpr unsigned char GHOST_SPEED = 1;
 constexpr unsigned char MAP_HEIGHT = 21; // columnas del laberinto
 constexpr unsigned char MAP_WIDTH = 21; // filas del laberinto
 
-
 constexpr unsigned char PACMAN_ANIMATION_FRAMES = 6; //fps de la animacion de pacman
 constexpr unsigned char PACMAN_ANIMATION_SPEED = 4; //fps de la velocidad de pacman
 constexpr unsigned char PACMAN_DEATH_FRAMES = 12; // fps de la muerte de pacman
@@ -54,8 +44,8 @@ constexpr unsigned short FRAME_DURATION = 16667;
 constexpr unsigned short GHOST_FLASH_START = 64;
 constexpr unsigned short LONG_SCATTER_DURATION = 512;
 constexpr unsigned short SHORT_SCATTER_DURATION = 256;
+constexpr unsigned short INTOCABLE_DURATION = 200;
 
-//unsigned int sumapuntaje = pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost();
 
 enum Cell
 {

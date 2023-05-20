@@ -35,7 +35,7 @@ int main()
     array<string, MAP_HEIGHT> map_sketch = {
             " ################### ",
             " #........#........# ",
-            " #o##.###.#.###.##o# ",
+            " #.##.###.#.###.##o# ",
             " #.................# ",
             " #.##.#.#####.#.##.# ",
             " #....#...#...#....# ",
@@ -48,7 +48,7 @@ int main()
             " ####.# ##### #.#### ",
             " #........#........# ",
             " #.##.###.#.###.##.# ",
-            " #o.#.....P.....#.o# ",
+            " #o.#.....P.....#..# ",
             " ##.#.#.#####.#.#.## ",
             " #....#...#...#....# ",
             " #.######.#.######.# ",
@@ -79,38 +79,37 @@ int main()
 
     colisionPellet colisionpellet;  // instancia de la clase colisionPellet de MapCollision.cpp
 
-    //Generating a random seed.
-    srand(static_cast<unsigned>(time(0)));
+    //se genera la semilla para el random del juego
+    srand(static_cast<unsigned>(time(0))); //random del juego
 
-    map = convert_sketch(map_sketch, ghost_positions, pacman);
+    map = convert_sketch(map_sketch, ghost_positions, pacman); // posiciones en el mapa
 
-    ghost_manager.reset(level, ghost_positions);
+    ghost_manager.reset(level, ghost_positions); // reset del nivel y la posicion de los fantasmas
 
-    //Get the current time and store it in a variable.
+    //obtiene el tiempo real y lo almacena en una variable
     previous_time = chrono::steady_clock::now();
 
     while (1 == window.isOpen())
     {
-        //Here we're calculating the lag.
+        //calculo del lag en el juego
         unsigned delta_time = chrono::duration_cast<chrono::microseconds>(chrono::steady_clock::now() - previous_time).count();
 
         lag += delta_time;
 
         previous_time += chrono::microseconds(delta_time);
 
-        //While the lag exceeds the maximum allowed frame duration.
+        // bucle cuando el lag se pasa del maximo permitido durante los frames del juego
         while (FRAME_DURATION <= lag)
         {
-            //We decrease the lag.
+            //se reduce el lag
             lag -= FRAME_DURATION;
 
             while (1 == window.pollEvent(event))
             {
                 switch (event.type)
                 {
-                    case Event::Closed:
+                    case Event::Closed: // para cerrar la ventana
                     {
-                        //Making sure the player can close the window.
                         window.close();
                     }
                 }
@@ -177,34 +176,34 @@ int main()
             {
                 window.clear();
 
-                if (0 == game_won && 0 == pacman.get_dead())
+                if (0 == game_won && 0 == pacman.get_dead()) // mientras el juego siga corriendo, aparece en pantalla
                 {
                     draw_map(map, window);
 
                     ghost_manager.draw(GHOST_FLASH_START >= pacman.get_energizer_timer(), window);
 
-                    draw_text(0, 0, CELL_SIZE * MAP_HEIGHT, "Level: " + to_string(1 + level), window);
+                    draw_text(0, 0, CELL_SIZE * MAP_HEIGHT, "Nivel: " + to_string(1 + level), window); // label de nivel actual
 
-                    draw_text(0, 110, CELL_SIZE * MAP_HEIGHT, "Score: " + to_string(pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost()), window);
+                    draw_text(0, 110, CELL_SIZE * MAP_HEIGHT, "Puntos: " + to_string(pacman.get_score() + colisionpellet.get_scorePellet() + colisionghosts.get_scoreGhost()), window); // label de puntos que se van obteniendo
 
-                    draw_text(0, 220, CELL_SIZE * MAP_HEIGHT, "life: " + to_string(pacman.get_vidas()), window);
+                    draw_text(0, 220, CELL_SIZE * MAP_HEIGHT, "Vida: " + to_string(pacman.get_vidas()), window); // label de vidas actuales
+
                 }
 
                 pacman.draw(game_won, window);
 
-                if (1 == pacman.get_animation_over())
+                if (1 == pacman.get_animation_over()) // si pacman gana, pasa al siguiente nivel
                 {
                     if (1 == game_won)
                     {
-                        draw_text(1, 0, 0, "Siguiente nivel", window);
+                        draw_text(1, 0, 0, "Siguiente nivel", window); // pausa para el siguiente nivel
                     }
                     else
                     {
-                        draw_text(1, 0, 0, "Juego Perdido", window);
+                        draw_text(1, 0, 0, "Juego Perdido", window); // pausa cuando se acaban las vidas de pacman
                     }
                 }
                 window.display();
-
             }
         }
     }

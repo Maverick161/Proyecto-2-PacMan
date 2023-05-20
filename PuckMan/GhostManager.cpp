@@ -25,7 +25,7 @@ void GhostManager::reset(unsigned char i_level, const std::array<Position, 4>& i
 {
     current_wave = 0;
 
-    //This is how we're increasing the difficulty.
+    //para aumentar la dificultad del juego
     wave_timer = static_cast<unsigned short>(LONG_SCATTER_DURATION / pow(2, i_level));
 
     // Calcula el número de fantasmas basado en el nivel, con un mínimo de 1 y un máximo de 4
@@ -42,15 +42,16 @@ void GhostManager::reset(unsigned char i_level, const std::array<Position, 4>& i
     for (Ghost& ghost : ghosts)
     {
         //Usamos el fantasma azul para obtener la ubicación de la casa y el fantasma rojo para obtener la ubicación de la salida
-        // Necesitamos asegurarnos de que hay al menos 3 fantasmas antes de hacer esto
         if (ghosts.size() >= 1) {
             ghost.reset(ghosts[0].get_position(), ghosts[3].get_position());
         }
-}}
+    }
+}
 
 void GhostManager::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, Pacman& i_pacman)
 {
-    if (0 == i_pacman.get_energizer_timer()) //We won't update the wave timer when Pacman is energized.
+    //la dificultad no incrementa cuando pacman tiene un poder
+    if (0 == i_pacman.get_energizer_timer())
     {
         if (0 == wave_timer)
         {
@@ -64,7 +65,7 @@ void GhostManager::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, 
                 }
             }
 
-            //I took the rules from the website.
+            //duracion del incremento de la dificultad
             if (1 == current_wave % 2)
             {
                 wave_timer = CHASE_DURATION;
@@ -94,4 +95,37 @@ void GhostManager::activateGhost(unsigned char index) { // para activar los fant
     if (index < ghosts.size()){
         ghosts[index].active = true;
     }
+   /* // Implementa el operador de comparación para los nodos
+    inline bool operator < (const Node& lhs, const Node& rhs) {
+        return lhs.fCost < rhs.fCost;
+    }
+
+// Implementa la verificación de validez para los nodos
+    static bool isValid(int x, int y) {
+        // Aquí necesitas implementar la verificación de obstáculos y límites del mapa según tu mundo de juego.
+    }
+
+// Implementa la verificación si el nodo es el destino
+    static bool isDestination(int x, int y, Node dest) {
+        if (x == dest.x && y == dest.y) {
+            return true;
+        }
+        return false;
+    }
+
+// cálculo del coste heurístico de un nodo
+    static double calculateH(int x, int y, Node dest) {
+        double H = (sqrt((x - dest.x)*(x - dest.x) + (y - dest.y)*(y - dest.y)));
+        return H;
+    }
+
+// Implementa el algoritmo A*
+    static std::vector<Node> aStar(Node player, Node dest) {
+        // Aquí debería ir la implementación completa del algoritmo A* que proporcionaste en tu código anterior.
+    }
+
+// Implementa la creación de un camino desde el inicio hasta el destino
+    static std::vector<Node> makePath(std::array<std::array<Node, (Y_MAX / Y_STEP)>, (X_MAX / X_STEP)> map, Node dest) {
+        // Aquí debería ir la implementación completa de makePath que proporcionaste en tu código anterior.
+    } */
 }

@@ -9,6 +9,28 @@
 
 unsigned int puntajeGhost; // variable para guardar los puntos cuando pacman se come un fantasma
 
+//estructura que representa un nodo en A*
+struct Node{
+    int x;
+    int y;
+    int g;
+    int h;
+    Node* parent;
+
+    Node (int x, int y, int g, int h, Node* parent) :
+    x(x),
+    y(y),
+    g(g),
+    h(h),
+
+    parent(parent){}
+
+    int getF() const{
+        return g + h;
+    }
+
+};
+
 Ghost::Ghost(unsigned char i_id) :
         id(i_id)
 {
@@ -150,7 +172,7 @@ void Ghost::draw(bool i_flash, RenderWindow& i_window)
     animation_timer = (1 + animation_timer) % (GHOST_ANIMATION_FRAMES * GHOST_ANIMATION_SPEED);
 }
 
-void Ghost::reset(const Position& i_home, const Position& i_home_exit)
+void Ghost::reset(const Position& i_home, const Position& i_home_exit) // metodo para reiniciar los fantasmas
 {
     movement_mode = 0;
     use_door = 0 < id;
@@ -514,3 +536,5 @@ Position Ghost::get_position() //metodo para obtener la posicion del fantasma
 unsigned int colisionGhosts::get_scoreGhost() {
     return puntajeGhost;
 }
+
+// algortimo A*
