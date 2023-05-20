@@ -7,36 +7,14 @@
 #include "Ghost.hpp"
 #include "MapCollision.hpp"
 
-unsigned int puntajeGhost; // variable para guardar los puntos cuando pacman se come un fantasma
-
-/*//estructura que representa un nodo en A*
-struct Node{
-    int x;
-    int y;
-    int g;
-    int h;
-    Node* parent;
-
-    Node (int x, int y, int g, int h, Node* parent) :
-    x(x),
-    y(y),
-    g(g),
-    h(h),
-
-    parent(parent){}
-
-    int getF() const{
-        return g + h;
-    }
-};
-
+/*
 //funcion de heuristica para estimar la distancia entre el fantasma y el poder
 int heuristica(int x1, int y1, int x2, int y2){
     return abs(x1-x2)+abs(y1-y2);
 }
 
 //funcion que verifica si un nodo esta en la closed list
-bool isInClosedLIst(const vector<Node*>& closedList, int x, int y){
+bool isInClosedList(const vector<Node*>& closedList, int x, int y){
     for (const auto& node : closedList){
         if (node->x == x && node->y == y){
             return true;
@@ -78,9 +56,86 @@ vector<Node*> reconstructPath(Node* node){
 }
 
 //funcion para calcular el movimiento del fantasma con A*
-Direction calculateNextMove(const Position&, ghostPosition, const Position& targetPosition, const vector<vector<Cell>>& map){
+Direction calculateNextMove(const Position& Position, const Position& targetPosition, const vector<vector<Cell>>& map){
 
-}*/
+    //crear el nodo inicial con la posicion actual del fantasma
+    Node* startNode = new Node(Position.x, Position.y, 0, heuristica(Position.x, Position.y, targetPosition.x, targetPosition.y),
+                               nullptr);
+
+    //crea la open y closed list
+    priority_queue<Node*, vector<Node*>, function<bool(Node*, Node*)>> openList(
+            [](Node* a, Node* b){
+                return a->getF() > b->getF();
+            }
+            );
+    vector<Node*>closedList;
+
+    //agrega el nodo iicial a la open list
+    openList.push(startNode);
+
+    //itera hasta que la open list este vacia
+    while (!openList.empty()){
+        //obtiene el nodo con el costo F mas bajo de la lista abierta
+        Node* currentNode = openList.top();
+        openList.pop();
+
+        //verifica si se alcanzo la posicion objetivo
+        if (currentNode->x == targetPosition.x && currentNode->y == targetPosition.y){
+            //reconstruye el camino y obtiene el siguiente movimiento
+            vector<Node*> path = reconstructPath(currentNode);
+            if (path.size()>=2){
+                Node* nextNode = path[1];
+                int dx = nextNode->x - currentNode->x;
+                int dy = nextNode->y - currentNode->y;
+                if (dx==1){
+                    return Direction::Right;
+                } else if (dx == -1) {
+                    return Direction::Left;
+                } else if (dy == 1) {
+                    return Direction::Down;
+                } else if (dy == -1) {
+                    return Direction::Up;
+                }
+            }
+            break;
+
+        }
+
+        for (int dx = -1; dx <= 1; ++dx){
+            for (int dy = -1; dy <= 1; ++dy){
+                //verifica si el que sigue esta dentro del laberinto
+                int newX = currentNode->x + dx;
+                int newY = currentNode->y + dy;
+                if (newX >= 0 && newX < CELL_SIZE * MAP_WIDTH * SCREEN_RESIZE && newY >= 0 && newY < (FONT_HEIGHT + CELL_SIZE * MAP_HEIGHT) * SCREEN_RESIZE){
+                    //verifica si el sucesor es un camino valido y no esta en la closed list
+                    if (map[newY][newX].type != Cell::Wall && !isInClosedList(closedList, newX, newY)){
+                        int newG = currentNode->g + 1;
+                        int newH = heuristica(newX, newY, targetPosition.x, targetPosition.y);
+                        Node* successor = new Node(newX, newY, newG, newH, currentNode);
+
+                        //verificar si el sucesor ya esta en la open list y actualizar su costo si es menor
+                        if (!isInOpenList(openList, newX, newY, newG, currentNode)){
+                            openList.push(successor);
+                        }
+                    }
+                }
+            }
+        }
+        //agregar el nodo actual a la lista cerrada
+        closedList.push_back(currentNode);
+    }
+    //libera la memoria de los nodos
+    delete startNode;
+    for(const auto& node : closedList){
+        delete node;
+    }
+    //si no encuentra un camino valido, no retorna direccion
+    return Direction::None;
+}
+*/
+
+
+unsigned int puntajeGhost; // variable para guardar los puntos cuando pacman se come un fantasma
 
 Ghost::Ghost(unsigned char i_id) :
         id(i_id)
@@ -266,6 +321,7 @@ void Ghost::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WID
     else if (0 == i_pacman.get_energizer_timer() && 1 == frightened_mode)
     {
         frightened_mode = 0;
+
     }
 
     //Para que el fantasma no se salga de la pantalla
@@ -417,6 +473,7 @@ void Ghost::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WID
         if (0 == frightened_mode) //colision entre pacman y fantasmas
         {
             i_pacman.loseLife();
+
         }
         else //para que el fantasma se devuelva al home
         {
@@ -587,5 +644,3 @@ Position Ghost::get_position() //metodo para obtener la posicion del fantasma
 unsigned int colisionGhosts::get_scoreGhost() {
     return puntajeGhost;
 }
-
-// algortimo A*

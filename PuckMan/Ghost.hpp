@@ -1,6 +1,42 @@
 #pragma once
+#include <array>
+#include <cmath>
+#include <SFML/Graphics.hpp>
+#include "Global.hpp"
+#include "Pacman.hpp"
+#include "MapCollision.hpp"
 
 using namespace std;
+/*
+struct Node{
+    int x;
+    int y;
+    int g;
+    int h;
+    Node* parent;
+
+    Node(int x, int y, int g, int h, Node* parent) : x(x), y(y), g(g),h(h), parent(parent) {}
+
+    int getF()const{
+        return g+h;
+    }
+};
+
+//funcion heuristica para buscar la distancia entre fantasmas y poderes
+int heuristica(int x1, int y1, int x2, int y2);
+
+//funcion que verifica si un nodo esta en la lista cerrada
+bool isInClosedList(const vector<Node*>& closedList, int x, int y);
+
+//funcion que verifica si un nodo esta en la lista abierta y actualiza su costo si es menor
+bool isInOpenList(priority_queue<Node*, vector<Node*>, function<bool(Node*, Node*)>>& openList, int x, int y, int newG, Node* parent);
+
+//funcion para reconstruir el camino a partir del nodo final
+vector<Node*> reconstructPath(Node* node);
+
+//funcion para calcular el siguiente movimiento del fantasma usando A*
+Direction calculateNextMove(const Position& Position, const Position& targetPosition, const vector<vector<Cell>>& map);
+*/
 
 class Ghost
 {
