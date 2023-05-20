@@ -28,7 +28,6 @@ struct Node{
     int getF() const{
         return g + h;
     }
-
 };
 
 Ghost::Ghost(unsigned char i_id) :
