@@ -202,7 +202,7 @@ void Ghost::draw(bool i_flash, RenderWindow& i_window)
     Sprite face;
 
     Texture texture;
-    texture.loadFromFile("/home/fernandez/CLionProjects/Proyecto-2-PacMan/PuckMan/Images/Ghost16.png");
+    texture.loadFromFile("/home/fernando/Documentos/Proyecto-2-PacMan/PuckMan/Images/Ghost16.png");
 
     body.setTexture(texture);
     body.setPosition(position.x, position.y);
@@ -472,7 +472,7 @@ void Ghost::update(unsigned char i_level, array<array<Cell, MAP_HEIGHT>, MAP_WID
     {
         if (0 == frightened_mode) //colision entre pacman y fantasmas
         {
-            i_pacman.loseLife();
+            i_pacman.loseLife(i_map);
 
         }
         else //para que el fantasma se devuelva al home
