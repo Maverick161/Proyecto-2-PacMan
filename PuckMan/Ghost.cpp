@@ -9,7 +9,7 @@
 
 unsigned int puntajeGhost; // variable para guardar los puntos cuando pacman se come un fantasma
 
-//estructura que representa un nodo en A*
+/*//estructura que representa un nodo en A*
 struct Node{
     int x;
     int y;
@@ -29,6 +29,58 @@ struct Node{
         return g + h;
     }
 };
+
+//funcion de heuristica para estimar la distancia entre el fantasma y el poder
+int heuristica(int x1, int y1, int x2, int y2){
+    return abs(x1-x2)+abs(y1-y2);
+}
+
+//funcion que verifica si un nodo esta en la closed list
+bool isInClosedLIst(const vector<Node*>& closedList, int x, int y){
+    for (const auto& node : closedList){
+        if (node->x == x && node->y == y){
+            return true;
+        }
+    }
+    return false;
+}
+
+//funcion que verifica si un nodo esta en la lista abierta y actualiza su costo si es menor
+bool isInOpenList(priority_queue<Node*, vector<Node*>, function<bool(Node*, Node*)>>& openList, int x, int y, int newG, Node* parent){
+    vector<Node*> openNodes;
+    while (!openList.empty()) {
+        Node* node = openList.top();
+        openList.pop();
+        if (node->x == x && node->y == y){
+            if (newG < node->g){
+                node->g = newG;
+                node->parent = parent;
+            }
+            return true;
+        }
+        openNodes.push_back(node);
+    }
+    for (const auto& node : openNodes){
+        openList.push(node);
+    }
+    return false;
+}
+
+//funcion para reconstruir el camino a partir del nodo final
+vector<Node*> reconstructPath(Node* node){
+    vector<Node*> path;
+    while (node!= nullptr){
+        path.push_back(node);
+        node = node->parent;
+    }
+    reverse(path.begin(), path.end());
+    return path;
+}
+
+//funcion para calcular el movimiento del fantasma con A*
+Direction calculateNextMove(const Position&, ghostPosition, const Position& targetPosition, const vector<vector<Cell>>& map){
+
+}*/
 
 Ghost::Ghost(unsigned char i_id) :
         id(i_id)
